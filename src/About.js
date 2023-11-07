@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 const About = () => {
   return (
@@ -8,10 +9,18 @@ const About = () => {
         in React.js and with strong basics of HTML, CSS and JavaScript
       </p>
       <div className='nav_section'>
-        <button>Projects</button>
-        <button>Skills</button>
-        <button>View Resume</button>
-        <button>Contact</button>
+        <Link to={'/projects'} className='btn_wrapper'>
+            <button>Projects</button>
+        </Link>
+        <Link to={'/skills'} className='btn_wrapper'>
+            <button>Skills</button>
+        </Link>
+        <Link to={'/resume'} className='btn_wrapper'>
+            <button>View Resume</button>
+        </Link>
+        <Link to={'/contact'} className='btn_wrapper'>
+            <button>Contact</button>
+        </Link>
       </div>
     </div>
   )
