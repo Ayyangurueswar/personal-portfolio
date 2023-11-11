@@ -13,11 +13,11 @@ const About = () => {
             <button>Projects</button>
         </Link>
         <Link to={'/skills'} className='btn_wrapper'>
-            <button>Skills</button>
+            <button>Skills and Certifications</button>
         </Link>
-        <Link to={'/resume'} className='btn_wrapper'>
-            <button>View Resume</button>
-        </Link>
+        <a href='/' className='btn_wrapper'>
+          <button>View Resume</button>
+        </a>
         <Link to={'/contact'} className='btn_wrapper'>
             <button>Contact</button>
         </Link>
