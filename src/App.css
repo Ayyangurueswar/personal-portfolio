@@ -150,4 +150,27 @@
 .cert{
   border: 2px solid white;
   border-radius: 15px;
+  text-decoration: none;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.cert_wrapper{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.cert_wrapper p{
+  text-align: center;
+}
+
+.contact_container{
+  width: 100vw;
+  height: 100vh;
+  padding: 1%;
 }
