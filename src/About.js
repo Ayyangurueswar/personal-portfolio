@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom'
 const About = () => {
   return (
     <div className='about_container'>
-      <img src="/images/ayyan.jpg" alt='ayyan'/>
+      <img src="/images/ayyan.jpg" alt='ayyan' className='pic'/>
       <p>Hi there, This is Ayyan Guru Eswar - A passionate frontend developer well versed
         in React.js and with strong basics of HTML, CSS and JavaScript
       </p>
