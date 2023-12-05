@@ -37,7 +37,7 @@ const Projects = () => {
         </div>
       </div>
       <div className='project'>
-        <a href='https://github.com/Ayyangurueswar/bouncing-balls-game' className='card_container'>
+        <a href='https://ayyangurueswar.github.io/bouncing-balls-game/' className='card_container'>
           <img src='images/project1.png' alt='bouncing-balls-game' className='card_image'></img>
         </a>
         <div className='description'>

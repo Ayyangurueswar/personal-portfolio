@@ -6,7 +6,7 @@ const About = () => {
     <div className='about_container'>
       <div className='main_content'>
         <div className='about'>
-          <img src="/images/ayyan.jpg" alt='ayyan' id='pic'/>
+          <img src="images/ayyan.jpg" alt='ayyan' id='pic'/>
           <p className='desc'>Hi there, This is Ayyan Guru Eswar - Frontend developer well versed
             in React.js and with strong basics of HTML, CSS and JavaScript.
           </p>
