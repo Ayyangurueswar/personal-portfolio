@@ -1,4 +1,6 @@
-import React from 'react'
+import React from 'react';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faPython, faReact, faJs, faHtml5, faCss3, faBootstrap } from '@fortawesome/free-brands-svg-icons';
 
 const Skills = () => {
   return (
@@ -9,25 +11,25 @@ const Skills = () => {
           <div className='skill'>
             <h3>Web technologies</h3>
             <ul>
-              <li>React.js</li>
-              <li>JavaScript</li>
-              <li>react-redux</li>
-              <li>Bootstrap</li>
-              <li>CSS</li>
-              <li>HTML</li>
+              <li><span className='skill_icon'><FontAwesomeIcon icon={faReact} spin size='lg'/></span> React.js</li>
+              <li><span className='skill_icon'><FontAwesomeIcon icon={faJs} beat size='lg'/></span> JavaScript</li>
+              <li><span className='skill_icon'><FontAwesomeIcon icon={faReact} spin size='lg'/></span> react-redux</li>
+              <li><span className='skill_icon'><FontAwesomeIcon icon={faBootstrap} flip size='lg'/></span> Bootstrap</li>
+              <li><span className='skill_icon'><FontAwesomeIcon icon={faCss3} flip size='lg'/></span> CSS</li>
+              <li><span className='skill_icon'><FontAwesomeIcon icon={faHtml5} flip size='lg'/></span> HTML</li>
             </ul>
           </div>
           <div className='skill'>
             <h3>Programming languages</h3>
             <ul>
-              <li>C++</li>
-              <li>C</li>
-              <li>Python</li>
+              <li><span className='skill_icon'><i className="devicon-cplusplus-plain"></i></span> C++</li>
+              <li><span className='skill_icon'><i className="devicon-c-plain"></i></span> C</li>
+              <li><span className='skill_icon'><FontAwesomeIcon icon={faPython} beat size='lg'/></span> Python</li>
             </ul>
           </div>
           <div className='skill'>
             <h3>Others</h3>
-            <ul>
+            <ul className='other_list'>
               <li>Object Oriented Programming</li>
               <li>Internet of Things</li>
             </ul>
@@ -35,7 +37,7 @@ const Skills = () => {
         </div>
         </div>
       <div>
-        <h1>Certifications</h1>
+        <h1>Certifications:</h1>
         <div className='certifications'>
           <a href='https://drive.google.com/file/d/1TYuO2ofp1HgENRrCydOXZ05wq-o1diA0/view?usp=sharing' className='cert'>
             <div className='cert_wrapper'>

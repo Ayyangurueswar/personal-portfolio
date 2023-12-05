@@ -4,10 +4,12 @@ import { Link } from 'react-router-dom'
 const About = () => {
   return (
     <div className='about_container'>
-      <img src="/images/ayyan.jpg" alt='ayyan' className='pic'/>
-      <p>Hi there, This is Ayyan Guru Eswar - A passionate frontend developer well versed
-        in React.js and with strong basics of HTML, CSS and JavaScript
-      </p>
+      <div className='about'>
+        <img src="/images/ayyan.jpg" alt='ayyan' id='pic'/>
+        <p className='desc'>Hi there, This is Ayyan Guru Eswar - Frontend developer well versed
+          in React.js and with strong basics of HTML, CSS and JavaScript.
+        </p>
+      </div>
       <div className='nav_section'>
         <Link to={'/projects'} className='btn_wrapper'>
             <button>Projects</button>
@@ -21,6 +23,14 @@ const About = () => {
         <Link to={'/contact'} className='btn_wrapper'>
             <button>Contact</button>
         </Link>
+      </div>
+      <div className='journey'>
+        <h2>Journey so far...</h2>
+        <p>
+          I completed my higher secondary education in 2021 with a score of 93.2% and
+          currently pursuing B.Tech in Electronics and Communication Engineering at Indian Institute of
+          Information Technology Tiruchirappalli.
+        </p>
       </div>
     </div>
   )
