@@ -13,16 +13,6 @@ html{
   background-attachment: fixed;
 }
 
-body{
-  height: 100vh;
-  width: 100vw;
-}
-
-#root{
-  height:100%;
-  width:100%;
-}
-
 .about_container{
   font-size: 1.5rem;
   width: 100%;
@@ -32,25 +22,36 @@ body{
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 2%;
 }
 
-.container{
-  width:100%;
-  height:100%;
+.main_content{
+  margin-top: 5%;
+  margin-bottom: 10%;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+
+.side_content{
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
 }
 
 .nav_section{
   width: 100%;
-  height: 30%;
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
+  height: 150px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 200px));
+  justify-content: center;
+  gap: 10%;
 }
 
 .btn_wrapper{
-  width: 20%;
-  height: 40%;
+  width: 90%;
+  height: 60%;
 }
 
 .nav_section button{
@@ -77,8 +78,9 @@ body{
   width: 100%;
   height: 100%;
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(auto-fit, minmax(200px, 355px));
   padding: 2%;
+  justify-content: center;
   align-items: center;
   gap: 3rem;
 }
@@ -122,8 +124,8 @@ body{
 }
 
 .skills_container{
-  width: 100vw;
-  height: 100vh;
+  width: 100%;
+  height: 100%;
   padding: 1rem;
   display: flex;
   flex-direction: column;
@@ -134,7 +136,8 @@ body{
   width: 100%;
   height: 30%;
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(auto-fit, minmax(200px, 355px));
+  justify-content: center;
   gap: 1rem;
   margin: 0.5rem 0;
   margin-bottom: 2rem;
@@ -166,12 +169,13 @@ body{
 
 .certifications{
   width: 100%;
-  height: 120%;
+  height: 400px;
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-auto-rows: minmax(2, auto);
+  grid-template-columns: repeat(auto-fit, minmax(300px, 350px));
+  grid-template-rows: repeat(auto-fit, minmax(50px, 80px));
   gap: 2rem;
   margin-top: 1%;
+  justify-content: center;
 }
 
 .cert{
@@ -183,6 +187,7 @@ body{
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  text-align: center;
 }
 
 .cert_wrapper{
@@ -201,8 +206,11 @@ body{
 }
 
 .contact_container{
-  width: 100vw;
-  height: 100vh;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 4%;
   padding: 1%;
 }
 
@@ -229,10 +237,11 @@ body{
 
 .contacts{
   width: 100%;
-  height: 40%;
+  height: 60%;
   display: grid;
-  grid-auto-rows: minmax(1, auto);
-  grid-template-columns: repeat(5, 1fr);
+  grid-template-columns: repeat(auto-fit, minmax(50px, 200px));
+  grid-template-rows: repeat(auto-fit, minmax(120px, 150px));
+  justify-content: center;
   align-items: center;
 }
 
@@ -257,6 +266,7 @@ body{
   flex-direction: column;
   height: 40%;
   align-items: center;
+  gap: 25px;
 }
 
 .journey{
@@ -264,7 +274,43 @@ body{
 }
 
 #pic{
-  width: 13%;
-  height: 75%;
+  width: 180px;
+  height: 180px;
   border-radius: 100%;
+}
+
+.queries p{
+  font-size: 1.7rem;
+  text-align: center;
+}
+
+.side_content p{
+  text-indent: 14%;
+}
+
+.footer{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border-top: 2px dotted white;
+  margin-top: 3%;
+}
+
+.link_list{
+  list-style-type: none;
+}
+
+.link_list li{
+  margin: 5% 0%;
+  border-bottom: 2px dotted white;
+}
+
+.link{
+  text-decoration: none;
+  color: white;
+}
+
+.links{
+  margin-top: 2%;
+  margin-bottom: 2%;
 }

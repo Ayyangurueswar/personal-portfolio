@@ -4,6 +4,7 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Projects from './Projects';
 import Skills from './Skills';
 import Contact from './Contact';
+import Footer from './Footer';
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
           <Route path='/contact' element={<Contact/>} exact/>
         </Routes>
       </div>
+      <Footer/>
     </Router>
   );
 }

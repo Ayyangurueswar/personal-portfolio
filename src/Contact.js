@@ -23,6 +23,12 @@ const Contact = () => {
           <FontAwesomeIcon icon={faInstagram} beat size='2xl' style={{color: "#d6d6d6",}} className='contact_icon'/>
         </a>
       </div>
+      <div className='queries'>
+        <p>
+          I am currently open to work in SDE intern or front-end developer intern roles so do
+          get in touch if you think I can fit in.
+        </p>
+      </div>
     </div>
   )
 }
