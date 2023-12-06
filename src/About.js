@@ -18,7 +18,7 @@ const About = () => {
           <Link to={'/skills'} className='btn_wrapper'>
               <button>Skills and Certifications</button>
           </Link>
-          <a href='https://drive.google.com/file/d/1UE0-5N-pdQ-r1TNXXotGYmMYpXDrvk4_/view?usp=sharing' className='btn_wrapper'>
+          <a href='https://drive.google.com/file/d/1TrVMXYO4QXPp_m-kd_qUEmZOlw2Ktgs4/view?usp=sharing' className='btn_wrapper'>
             <button>View Resume</button>
           </a>
           <Link to={'/contact'} className='btn_wrapper'>

@@ -7,14 +7,14 @@ const Footer = () => {
   return (
     <div className='footer'>
       <p>
-        Made with <FontAwesomeIcon icon={faHeart} bounce style={{color: "#dee0e3",}} /> and <FontAwesomeIcon icon={faFire} beat style={{color: "#c50d0d",}} /> by Ayyan.
+        Designed and developed with <FontAwesomeIcon icon={faHeart} bounce style={{color: "#dee0e3",}} /> and <FontAwesomeIcon icon={faFire} beat style={{color: "#c50d0d",}} /> by Ayyan.
       </p>
       <div className='links'>
         <h3>Quick links</h3>
         <ul className='link_list'>
             <li><Link to={'/projects'} className='link'>Projects</Link></li>
             <li><Link to={'/skills'} className='link'>Skills and certifications</Link></li>
-            <li><a href='https://drive.google.com/file/d/1UE0-5N-pdQ-r1TNXXotGYmMYpXDrvk4_/view?usp=sharing' className='link'>
+            <li><a href='https://drive.google.com/file/d/1TrVMXYO4QXPp_m-kd_qUEmZOlw2Ktgs4/view?usp=sharing' className='link'>
                 View Resume
                 </a>
             </li>
