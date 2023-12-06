@@ -28,23 +28,32 @@ const About = () => {
       </div>
       <div className='side_content'>
         <div className='journey'>
-          <h2>Journey so far...</h2>
-          <p>
-            I completed my higher secondary education in 2021 with a score of 93.2% and
-            currently pursuing B.Tech in Electronics and Communication Engineering at Indian Institute of
-            Information Technology Tiruchirappalli.
-          </p>
+          <img src='images/winding-road-vector-1056740.jpg' alt='journey' className='side_pic' />
+          <div className='side_desc'>
+            <h2>Journey so far...</h2>
+            <p>
+              I completed my higher secondary education in 2021 with a score of 93.2% and
+              currently pursuing B.Tech in Electronics and Communication Engineering at Indian Institute of
+              Information Technology Tiruchirappalli.
+            </p>
+          </div>
         </div>
         <div className='aim'>
-          <h2>What I aim for</h2>
-          <p>
-            I look forward to contribute to real world projects by collaborating with like minded people
-            and gain some valuable knowledge.
-          </p>
+          <img src='images/Dart-Aim-Transparent.png' alt='aim' className='side_pic'/>
+          <div className='side_desc'>
+            <h2>What I aim for</h2>
+            <p>
+              I look forward to contribute to real world projects by collaborating with like minded people
+              and gain some valuable knowledge.
+            </p>
+          </div>
         </div>
         <div className='personal_interest'>
-          <h2>Personal interests</h2>
-          <p>Mostly it's coding and when it's not I love watching football and eSports</p>
+          <img src='images/oz891c1p.png' alt='interest' className='side_pic' />
+          <div className='side_desc'>
+            <h2>Personal interests</h2>
+            <p>Mostly it's coding and when it's not I love watching football and eSports</p>
+          </div>
         </div>
       </div>
     </div>

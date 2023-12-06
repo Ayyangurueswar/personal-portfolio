@@ -269,10 +269,6 @@ html{
   gap: 25px;
 }
 
-.journey{
-  height: 30%;
-}
-
 #pic{
   width: 180px;
   height: 180px;
@@ -282,10 +278,6 @@ html{
 .queries p{
   font-size: 1.7rem;
   text-align: center;
-}
-
-.side_content p{
-  text-indent: 14%;
 }
 
 .footer{
@@ -313,4 +305,20 @@ html{
 .links{
   margin-top: 2%;
   margin-bottom: 2%;
+}
+
+.aim, .journey, .personal_interest{
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+}
+
+.side_pic{
+  width: 140px;
+  height: 140px;
+  border-radius: 140px;
+}
+
+.side_desc{
+  width: 50%;
 }
