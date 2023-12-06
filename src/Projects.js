@@ -19,6 +19,7 @@ const Projects = () => {
             <li>Integrated third party APIs like mailtrap(for user authentication) and stripe(for payments)</li>
           </ul>
         </div>
+        <a href='https://www.youtube.com/watch?v=okGTQ4LMmMM' className='demo'>Demo</a>
       </div>
       <div className='project'>
         <a href='https://github.com/Ayyangurueswar/tic-tac-toe-game' className='card_container'>

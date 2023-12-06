@@ -19,6 +19,7 @@ const Footer = () => {
                 </a>
             </li>
             <li><Link to={'/contact'} className='link'>Contact</Link></li>
+            <li><Link to={'/'} className='link'>About</Link></li>
         </ul>
       </div>
     </div>
