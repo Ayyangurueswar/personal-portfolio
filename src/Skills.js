@@ -47,11 +47,11 @@ const Skills = () => {
               </div>
             </div>
           </a>
-          <a href='https://drive.google.com/file/d/1GXm2lQ1FLI5M53X3XXNr3GnhIVQuPx6q/view?usp=sharing' className='cert'>
+          <a href='https://drive.google.com/file/d/1bUGq8S1gtsF3_LDYN4JfemJxTn-Uxe7g/view?usp=sharing' className='cert'>
             <div className='cert_wrapper'>
-              <h3>Programming using HTML</h3>
+              <h3>Programming using JavaScript</h3>
               <div className='overlay'>
-                <p>Certificate of completion of course - HTML5 in Infosys Springboard</p>
+                <p>Certificate of completion of course - JavaScript in Infosys Springboard</p>
               </div>
             </div>
           </a>
