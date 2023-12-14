@@ -6,10 +6,10 @@ const Skills = () => {
   return (
     <div className='skills_container'>
       <div>
-        <h1>Skills:</h1>
+        <h3>Skills:</h3>
         <div className='skill_list'>
           <div className='skill'>
-            <h3>Web technologies</h3>
+            <h4>Web technologies</h4>
             <ul>
               <li><span className='skill_icon'><FontAwesomeIcon icon={faReact} spin size='lg'/></span> React.js</li>
               <li><span className='skill_icon'><FontAwesomeIcon icon={faJs} beat size='lg'/></span> JavaScript</li>
@@ -20,7 +20,7 @@ const Skills = () => {
             </ul>
           </div>
           <div className='skill'>
-            <h3>Programming languages</h3>
+            <h4>Programming languages</h4>
             <ul>
               <li><span className='skill_icon'><i className="devicon-cplusplus-plain"></i></span> C++</li>
               <li><span className='skill_icon'><i className="devicon-c-plain"></i></span> C</li>
@@ -28,7 +28,7 @@ const Skills = () => {
             </ul>
           </div>
           <div className='skill'>
-            <h3>Others</h3>
+            <h4>Others</h4>
             <ul className='other_list'>
               <li>Object Oriented Programming</li>
               <li>Internet of Things</li>
@@ -37,11 +37,11 @@ const Skills = () => {
         </div>
         </div>
       <div>
-        <h1>Certifications:</h1>
+        <h3>Certifications:</h3>
         <div className='certifications'>
           <a href='https://drive.google.com/file/d/1TYuO2ofp1HgENRrCydOXZ05wq-o1diA0/view?usp=sharing' className='cert'>
             <div className='cert_wrapper'>
-              <h3>MERN stack web development internship</h3>
+              <h4>MERN stack web development internship</h4>
               <div className='overlay'>
                 <p>Certificate of completion of internship at webstack academy</p>
               </div>
@@ -49,7 +49,7 @@ const Skills = () => {
           </a>
           <a href='https://drive.google.com/file/d/1bUGq8S1gtsF3_LDYN4JfemJxTn-Uxe7g/view?usp=sharing' className='cert'>
             <div className='cert_wrapper'>
-              <h3>Programming using JavaScript</h3>
+              <h4>Programming using JavaScript</h4>
               <div className='overlay'>
                 <p>Certificate of completion of course - JavaScript in Infosys Springboard</p>
               </div>
@@ -57,7 +57,7 @@ const Skills = () => {
           </a>
           <a href='https://www.hackerrank.com/certificates/70c8844302af' className='cert'>
             <div className='cert_wrapper'>
-              <h3>Python Basics</h3>
+              <h4>Python Basics</h4>
               <div className='overlay'>
                 <p>Python - 5 star rated at HackerRank</p>
               </div>
@@ -65,7 +65,7 @@ const Skills = () => {
           </a>
           <a href='https://drive.google.com/file/d/1LJK_-G4G3Pg8lLDuTBJg-TsgxB7D_Tv7/view?usp=sharing' className='cert'>
             <div className='cert_wrapper'>
-              <h3>IoT internship</h3>
+              <h4>IoT internship</h4>
               <div className='overlay'>
                 <p>Certificate of completion of internship at Emertxe Information Technologies</p>
               </div>
