@@ -33,6 +33,9 @@ const Slider = () => {
                     <ListGroup.Item action as='li' style={{background:'none'}} className='li4'>
                         <Link to={'/contact'} className='side_menu'>Contact me</Link>
                     </ListGroup.Item>
+                    <ListGroup.Item action as='li' style={{background:'none'}} className='li5'>
+                        <Link to={'/'} className='side_menu'>About</Link>
+                    </ListGroup.Item>
                 </ListGroup>
             </Offcanvas.Body>
         </Offcanvas>

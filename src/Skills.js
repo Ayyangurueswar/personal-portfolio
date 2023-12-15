@@ -1,38 +1,49 @@
 import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faPython, faReact, faJs, faHtml5, faCss3, faBootstrap } from '@fortawesome/free-brands-svg-icons';
+import Slider from './Slider';
+import { Fade } from 'react-reveal';
 
 const Skills = () => {
   return (
     <div className='skills_container'>
+      <div className='slider'>
+        <Slider/>
+      </div>
       <div>
         <h3>Skills:</h3>
         <div className='skill_list'>
           <div className='skill'>
             <h4>Web technologies</h4>
-            <ul>
-              <li><span className='skill_icon'><FontAwesomeIcon icon={faReact} spin size='lg'/></span> React.js</li>
-              <li><span className='skill_icon'><FontAwesomeIcon icon={faJs} beat size='lg'/></span> JavaScript</li>
-              <li><span className='skill_icon'><FontAwesomeIcon icon={faReact} spin size='lg'/></span> react-redux</li>
-              <li><span className='skill_icon'><FontAwesomeIcon icon={faBootstrap} flip size='lg'/></span> Bootstrap</li>
-              <li><span className='skill_icon'><FontAwesomeIcon icon={faCss3} flip size='lg'/></span> CSS</li>
-              <li><span className='skill_icon'><FontAwesomeIcon icon={faHtml5} flip size='lg'/></span> HTML</li>
-            </ul>
+            <Fade bottom>
+              <ul>
+                <li><span className='skill_icon'><FontAwesomeIcon icon={faReact} spin size='lg'/></span> React.js</li>
+                <li><span className='skill_icon'><FontAwesomeIcon icon={faJs} beat size='lg'/></span> JavaScript</li>
+                <li><span className='skill_icon'><FontAwesomeIcon icon={faReact} spin size='lg'/></span> react-redux</li>
+                <li><span className='skill_icon'><FontAwesomeIcon icon={faBootstrap} flip size='lg'/></span> Bootstrap</li>
+                <li><span className='skill_icon'><FontAwesomeIcon icon={faCss3} flip size='lg'/></span> CSS</li>
+                <li><span className='skill_icon'><FontAwesomeIcon icon={faHtml5} flip size='lg'/></span> HTML</li>
+              </ul>
+            </Fade>
           </div>
           <div className='skill'>
             <h4>Programming languages</h4>
-            <ul>
-              <li><span className='skill_icon'><i className="devicon-cplusplus-plain"></i></span> C++</li>
-              <li><span className='skill_icon'><i className="devicon-c-plain"></i></span> C</li>
-              <li><span className='skill_icon'><FontAwesomeIcon icon={faPython} beat size='lg'/></span> Python</li>
-            </ul>
+            <Fade bottom>
+              <ul>
+                <li><span className='skill_icon'><i className="devicon-cplusplus-plain"></i></span> C++</li>
+                <li><span className='skill_icon'><i className="devicon-c-plain"></i></span> C</li>
+                <li><span className='skill_icon'><FontAwesomeIcon icon={faPython} beat size='lg'/></span> Python</li>
+              </ul>
+            </Fade>
           </div>
           <div className='skill'>
             <h4>Others</h4>
-            <ul className='other_list'>
-              <li>Object Oriented Programming</li>
-              <li>Internet of Things</li>
-            </ul>
+            <Fade bottom>
+              <ul className='other_list'>
+                <li>Object Oriented Programming</li>
+                <li>Internet of Things</li>
+              </ul>
+            </Fade>
           </div>
         </div>
         </div>

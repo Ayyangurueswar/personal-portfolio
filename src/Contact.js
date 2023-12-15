@@ -2,9 +2,14 @@ import React from 'react';
 import { faEnvelope, faPhone } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faLinkedin, faGithub, faInstagram } from '@fortawesome/free-brands-svg-icons';
+import Slider from './Slider';
+
 const Contact = () => {
   return (
     <div className='contact_container'>
+      <div className='slider'>
+        <Slider/>
+      </div>
       <h1>Connect with me</h1>
       <div className='contacts'>
         <a href='https://www.linkedin.com/in/ayyan-guru-eswar-a64827240/' className='contact_icon_wrap'>

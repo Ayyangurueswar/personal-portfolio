@@ -224,7 +224,7 @@
   align-items: center;
   justify-content: center;
   overflow: hidden;
-  transition: all ease 0.5s;
+  transition: all 0.5s ease;
 }
 
 .cert_wrapper:hover .overlay{
@@ -345,17 +345,23 @@
 .li2{
   opacity: 0;
   animation: slideFromLeft 0.6s ease forwards;
-  animation-delay: 0.2s;
+  animation-delay: 0.1s;
 }
 
 .li3{
   opacity: 0;
   animation: slideFromLeft 0.6s ease forwards;
-  animation-delay: 0.4s;
+  animation-delay: 0.2s;
 }
 
 .li4{
   opacity: 0;
   animation: slideFromLeft 0.6s ease forwards;
-  animation-delay: 0.6s;
+  animation-delay: 0.3s;
+}
+
+.li5{
+  opacity: 0;
+  animation: slideFromLeft 0.6s ease forwards;
+  animation-delay: 0.4s;
 }

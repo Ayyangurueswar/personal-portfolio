@@ -1,7 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import Fade from 'react-reveal/Fade'
-import Zoom from 'react-reveal/Zoom'
 import Slider from './Slider'
 
 const About = () => {
@@ -12,9 +11,9 @@ const About = () => {
       </div>
       <div className='container-fluid d-flex flex-column justify-content-center gap-5'>
         <div className='container-fluid text-center d-flex flex-column gap-5'>
-          <Zoom top>
+          <Fade bottom>
             <img className='rounded-circle pic mt-5' src='images/ayyan.jpg' alt='ayyan' />
-          </Zoom>
+          </Fade>
           <Fade left>
             <p className='fs-3'>Hi there, This is Ayyan Guru Eswar - Frontend developer well versed
               in React.js and with strong basics of HTML, CSS and JavaScript.
