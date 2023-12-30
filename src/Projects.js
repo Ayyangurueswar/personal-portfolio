@@ -49,6 +49,23 @@ const Projects = () => {
         </Slide>
         <Slide left>
           <div className='project'>
+            <a href='https://ayyangurueswar.github.io/test-app/' className='card_container'>
+              <img src='images/project4.png' alt='markdown previewer' className='card_image'></img>
+            </a>
+            <div className='description'>
+              <h3>Markdown Previewer</h3>
+              <p>Markdown Previewer built using React and Marked library</p>
+            </div>
+            <div className='features'>
+              <h4>Features</h4>
+              <ul>
+                <li>Renders github flavoured markdown as HTML elements</li>
+              </ul>
+            </div>
+          </div>
+        </Slide>
+        <Slide left>
+          <div className='project'>
             <a href='https://ayyangurueswar.github.io/bouncing-balls-game/' className='card_container'>
               <img src='images/project1.png' alt='bouncing-balls-game' className='card_image'></img>
             </a>

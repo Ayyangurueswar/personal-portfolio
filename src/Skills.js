@@ -58,11 +58,19 @@ const Skills = () => {
               </div>
             </div>
           </a>
-          <a href='https://drive.google.com/file/d/1bUGq8S1gtsF3_LDYN4JfemJxTn-Uxe7g/view?usp=sharing' className='cert'>
+          <a href='https://www.freecodecamp.org/certification/fcc8aed5ebd-e202-4429-8296-535d9b09857d/javascript-algorithms-and-data-structures' className='cert'>
             <div className='cert_wrapper'>
-              <h4>Programming using JavaScript</h4>
+              <h4>JavaScript data structures and algorithms</h4>
               <div className='overlay'>
-                <p>Certificate of completion of course - JavaScript in Infosys Springboard</p>
+                <p>Certificate of completion of course JavaScript data structures and algorithms from freeCodeCamp</p>
+              </div>
+            </div>
+          </a>
+          <a href='https://drive.google.com/file/d/1BcNAkBxN61bfJ3g0rFu50hePYgu5aBw4/view?usp=sharing' className='cert'>
+            <div className='cert_wrapper'>
+              <h4>Programming using React.js</h4>
+              <div className='overlay'>
+                <p>Certificate of completion of course - React.js, in Infosys Springboard</p>
               </div>
             </div>
           </a>

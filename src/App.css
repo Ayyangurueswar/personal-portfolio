@@ -168,7 +168,7 @@
   height: 400px;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 350px));
-  grid-template-rows: repeat(auto-fit, minmax(50px, 80px));
+  grid-template-rows: repeat(auto-fit, minmax(50px, 90px));
   gap: 2rem;
   margin-top: 1%;
   justify-content: center;
@@ -196,6 +196,7 @@
   justify-content: center;
   position: relative;
   overflow: hidden;
+  padding: 5%;
 }
 
 .cert_wrapper p{
