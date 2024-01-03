@@ -2,6 +2,16 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 import Fade from 'react-reveal/Fade'
 import Slider from './Slider'
+import Timeline from '@mui/lab/Timeline';
+import TimelineItem from '@mui/lab/TimelineItem';
+import TimelineSeparator from '@mui/lab/TimelineSeparator';
+import TimelineConnector from '@mui/lab/TimelineConnector';
+import TimelineContent from '@mui/lab/TimelineContent';
+import TimelineDot from '@mui/lab/TimelineDot';
+import Typography from '@mui/material/Typography';
+import SchoolIcon from '@mui/icons-material/School';
+import TimelineOppositeContent from '@mui/lab/TimelineOppositeContent';
+import BusinessOutlinedIcon from '@mui/icons-material/BusinessOutlined';
 
 const About = () => {
   return (
@@ -38,28 +48,98 @@ const About = () => {
           </div>
         </Fade>
       </div>
-      <div className='container-fluid d-flex flex-column gap-5' id='side_content'>
+      <div className='timeline'>
         <Fade bottom>
-          <div className='container-fluid d-flex flex-row border-primary border-5 justify-content-center
-          gap-5'>
-            <img src='images/winding-road-vector-1056740.jpg' alt='journey' className='rounded-circle side_pic' />
-            <div className='side_desc'>
-                <h2 className='h1'>Journey so far...</h2>
-                <p className='fs-4'>
-                  I completed my higher secondary education in 2021 with a score of 93.2% and
-                  currently pursuing B.Tech in Electronics and Communication Engineering at Indian Institute of
-                  Information Technology Tiruchirappalli.
-                </p>
-            </div>
-          </div>
+          <h2 className='text-center mb-5'>Journey so far...</h2>
         </Fade>
+        <Fade bottom>
+        <Timeline position='alternate'>
+          <TimelineItem>
+            <TimelineOppositeContent
+                sx={{ m: 'auto 0' }}
+                align="right"
+                variant="body2"
+                color="white"
+              >
+                2019-2021
+            </TimelineOppositeContent>
+            <TimelineSeparator>
+              <TimelineConnector />
+              <TimelineDot>
+                <SchoolIcon />
+              </TimelineDot>
+              <TimelineConnector />
+            </TimelineSeparator>
+            <TimelineContent sx={{ py: '12px', px: 2 }}>
+              <Typography variant="h6" component="span">
+                Higher Secondary education
+              </Typography>
+              <Typography>Science with mathematics.
+                Percentage: 93%.
+              </Typography>
+            </TimelineContent>
+          </TimelineItem>
+          <TimelineItem>
+          <TimelineOppositeContent
+                sx={{ m: 'auto 0' }}
+                align="right"
+                variant="body2"
+                color="white"
+              >
+                2021
+            </TimelineOppositeContent>
+            <TimelineSeparator>
+              <TimelineConnector />
+              <TimelineDot color='secondary'>
+                <SchoolIcon />
+              </TimelineDot>
+              <TimelineConnector />
+            </TimelineSeparator>
+            <TimelineContent sx={{ py: '12px', px: 2 }}>
+              <Typography variant="h6" component="span">
+                Indian Institute of Information Technology Tiruchirappalli
+              </Typography>
+              <Typography>
+                B.Tech in Electronics and Communication Engineering. CGPA: 7.92.
+              </Typography>
+            </TimelineContent>
+          </TimelineItem>
+          <TimelineItem>
+          <TimelineOppositeContent
+                sx={{ m: 'auto 0' }}
+                align="right"
+                variant="body2"
+                color="white"
+              >
+                08/2023 - 09/2023
+            </TimelineOppositeContent>
+            <TimelineSeparator>
+              <TimelineConnector />
+              <TimelineDot color='primary'>
+                <BusinessOutlinedIcon />
+              </TimelineDot>
+              <TimelineConnector />
+            </TimelineSeparator>
+            <TimelineContent sx={{ py: '12px', px: 2 }}>
+              <Typography variant="h6" component="span">
+                MERN Stack web development internship
+              </Typography>
+              <Typography>
+                Worked on a food delivery website using MERN stack technologies.
+              </Typography>
+            </TimelineContent>
+          </TimelineItem>
+        </Timeline>
+        </Fade>
+      </div>
+      <div className='container-fluid d-flex flex-column gap-5' id='side_content'>
         <Fade bottom>
           <div className='container-fluid d-flex flex-row border-primary border-5 justify-content-center
           gap-5'>
             <img src='images/Dart-Aim-Transparent.png' alt='journey' className='rounded-circle side_pic' />
               <div className='side_desc'>
-                <h2 className='h1'>What I aim for</h2>
-                <p className='fs-4'>
+                <h2 className='h3'>What I aim for</h2>
+                <p className='fs-5'>
                   I look forward to contribute to real world projects by collaborating with like minded people
                   and gain some valuable knowledge.
                 </p>
@@ -71,8 +151,8 @@ const About = () => {
           gap-5'>
             <img src='images/oz891c1p.png' alt='journey' className='rounded-circle side_pic' />
               <div className='side_desc'>
-                <h2 className='h1'>Personal interests</h2>
-                <p className='fs-4'>Mostly it's coding and when it's not I love watching football and eSports</p>
+                <h2 className='h3'>Personal interests</h2>
+                <p className='fs-5'>Mostly it's coding and when it's not I love watching football and eSports</p>
               </div>
           </div>
         </Fade>

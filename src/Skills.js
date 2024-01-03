@@ -52,7 +52,7 @@ const Skills = () => {
         <div className='certifications'>
           <a href='https://drive.google.com/file/d/1TYuO2ofp1HgENRrCydOXZ05wq-o1diA0/view?usp=sharing' className='cert'>
             <div className='cert_wrapper'>
-              <h4>MERN stack web development internship</h4>
+              <h5>MERN stack web development internship</h5>
               <div className='overlay'>
                 <p>Certificate of completion of internship at webstack academy</p>
               </div>
@@ -60,7 +60,7 @@ const Skills = () => {
           </a>
           <a href='https://www.freecodecamp.org/certification/fcc8aed5ebd-e202-4429-8296-535d9b09857d/javascript-algorithms-and-data-structures' className='cert'>
             <div className='cert_wrapper'>
-              <h4>JavaScript data structures and algorithms</h4>
+              <h5>JavaScript data structures and algorithms</h5>
               <div className='overlay'>
                 <p>Certificate of completion of course JavaScript data structures and algorithms from freeCodeCamp</p>
               </div>
@@ -68,7 +68,7 @@ const Skills = () => {
           </a>
           <a href='https://drive.google.com/file/d/1BcNAkBxN61bfJ3g0rFu50hePYgu5aBw4/view?usp=sharing' className='cert'>
             <div className='cert_wrapper'>
-              <h4>Programming using React.js</h4>
+              <h5>Programming using React.js</h5>
               <div className='overlay'>
                 <p>Certificate of completion of course - React.js, in Infosys Springboard</p>
               </div>
@@ -76,7 +76,7 @@ const Skills = () => {
           </a>
           <a href='https://www.hackerrank.com/certificates/70c8844302af' className='cert'>
             <div className='cert_wrapper'>
-              <h4>Python Basics</h4>
+              <h5>Python Basics</h5>
               <div className='overlay'>
                 <p>Python - 5 star rated at HackerRank</p>
               </div>
@@ -84,7 +84,7 @@ const Skills = () => {
           </a>
           <a href='https://drive.google.com/file/d/1LJK_-G4G3Pg8lLDuTBJg-TsgxB7D_Tv7/view?usp=sharing' className='cert'>
             <div className='cert_wrapper'>
-              <h4>IoT internship</h4>
+              <h5>IoT internship</h5>
               <div className='overlay'>
                 <p>Certificate of completion of internship at Emertxe Information Technologies</p>
               </div>

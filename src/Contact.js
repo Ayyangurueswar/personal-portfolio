@@ -1,10 +1,60 @@
-import React from 'react';
+import React, {useState} from 'react';
 import { faEnvelope, faPhone } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faLinkedin, faGithub, faInstagram } from '@fortawesome/free-brands-svg-icons';
 import Slider from './Slider';
+import Fade from 'react-reveal/Fade';
+import TextField from '@mui/material/TextField';
+import LoadingButton from '@mui/lab/LoadingButton';
+import SendIcon from '@mui/icons-material/Send';
+import Snackbar from '@mui/material/Snackbar';
+import CloseIcon from '@mui/icons-material/Close';
+import IconButton from '@mui/material/IconButton';
 
 const Contact = () => {
+  const [userName, setUserName] = useState('');
+  const [userEmail, setUserEmail] = useState('');
+  const [message, setMessage] = useState('Your message');
+  const [loading, setLoading] = useState(false);
+  const [error, setError] = useState(false);
+  const [alertMessage, setAlertMessage] = useState('');
+  const [open, setOpen] = useState(false);
+  const handleClose = (event, reason) => {
+    if (reason === 'clickaway') {
+      return;
+    }
+    setOpen(false);
+  };
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    let regex = /^[\w\-\.]+@([\w-]+\.)+[\w-]{2,}$/gm;
+    if(!regex.test(userEmail)){
+      setError(true);
+      setAlertMessage('Enter a valid email');
+      setOpen(true);
+      return;
+    }
+    if(message === ''){
+      setAlertMessage('Enter a message');
+      setOpen(true);
+      return;
+    }
+    const feedback = {from_name: userName, reply_to: userEmail, message: message};
+    const templateId = 'contact_form';
+    setLoading(true);
+    window.emailjs.send('contact_mail', templateId, feedback).then(() => {
+      setLoading(false);
+      setAlertMessage('Message Sent');
+      setOpen(true);
+      setUserName('');
+      setUserEmail('');
+      setMessage('Your message');
+    }).catch((e) => {
+      setLoading(false);
+      setAlertMessage("Error, try again");
+      setOpen(true);
+    });
+  }
   return (
     <div className='contact_container'>
       <div className='slider'>
@@ -28,12 +78,55 @@ const Contact = () => {
           <FontAwesomeIcon icon={faInstagram} beat size='2xl' style={{color: "#d6d6d6",}} className='contact_icon'/>
         </a>
       </div>
-      <div className='queries'>
+      <div className='queries mb-5'>
         <p>
           I am currently open to work in SDE intern or front-end developer intern roles so do
           get in touch if you think I can fit in.
         </p>
       </div>
+      <div className='divider mb-5'>
+        <Fade left>
+          <div className='divider_div'></div>
+        </Fade>
+        <p className='text-center fs-4 mb-0'>OR</p>
+        <Fade right>
+          <div className='divider_div'></div>
+        </Fade>
+      </div>
+      <h3 className='text-center mb-5'>Send a message</h3>
+      <form className='contact_form'>
+        <TextField id='filled-basic' label='Name' variant='filled' placeholder='Your name' 
+        color='secondary' type='text' onChange={(e) => {setUserName(e.target.value)}} value={userName}/>
+        <TextField id='filled-basic' label='Email' variant='filled' placeholder='Your email' 
+        color='secondary' type='email' required onChange={(e) => {setUserEmail(e.target.value)}}
+        error={error} value={userEmail}/>
+        <TextField
+          id="filled-multiline-static" label="Message" multiline rows={6}
+          variant="filled" color='secondary' required onChange={(e) => {setMessage(e.target.value)}}
+          value={message}/>
+        <LoadingButton className='send_button' onClick={handleSubmit} loading={loading} type='submit'
+          color='secondary'
+          endIcon={<SendIcon />}
+          loadingPosition="end"
+          variant="contained"
+        >
+          <span>Send</span>
+        </LoadingButton>
+        <Snackbar
+        open={open}
+        autoHideDuration={6000}
+        onClose={handleClose}
+        message={alertMessage}
+        action={<IconButton
+          size="small"
+          aria-label="close"
+          color="inherit"
+          onClick={handleClose}
+        >
+          <CloseIcon fontSize="small" />
+        </IconButton>}
+      />
+      </form>
     </div>
   )
 }
