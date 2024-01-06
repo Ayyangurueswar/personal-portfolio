@@ -4,14 +4,41 @@
   box-sizing: border-box;
 }
 
+:root{
+  --text-color: black;
+  --bg: rgb(234, 233, 233);
+  --border-color: rgb(218, 7, 218);
+  --hover-color: rgb(181, 33, 181);
+  --text-hover-color: white;
+  --overlay-color: rgb(148, 25, 144);
+  --form-bg: rgb(255, 255, 255);
+  --offcanvas-color: rgb(80, 80, 248);
+  --box-shadow-color: 1px 1px 10px magenta, -1px -1px 10px magenta;
+  --box-shadow-color2: 0.5px 0.5px 10px magenta;
+}
+
+[data-theme='dark']{
+  --text-color: white;
+  --bg: url('/public/images/OIP.jpeg');
+  --border-color: white;
+  --hover-color: white;
+  --text-hover-color: black;
+  --overlay-color: rgb(216, 45, 65);
+  --form-bg: white;
+  --offcanvas-color: rgba(0, 0, 0, 0.8);
+  --box-shadow-color: 2px 2px 9px 2px rgb(252, 90, 90), -2px -2px 9px 2px rgb(252, 90, 90);
+  --box-shadow-color2: 2px 2px 5px 5px rgb(221, 73, 73);
+}
+
 .whole_container{
   width: 100%;
-  color: white;
-  background-image: url('/public/images/OIP.jpeg');
+  color: var(--text-color);
+  background-image: var(--bg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
+  transition: all 1s ease;
 }
 
 .pic{
@@ -35,21 +62,31 @@
 
 .menu_btn{
   text-decoration: none;
-  color: white;
-  border: 2px solid white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--text-color);
+  border: 2px solid var(--border-color);
   border-radius: 10px;
   font-size: 1.1rem;
+  box-shadow: var(--box-shadow-color);
   transition: all 0.6s;
 }
 
 .menu_btn:hover{
-  background-color: white;
-  color: black;
+  background-color: var(--hover-color);
+  color: var(--text-hover-color);
 }
 
 @media screen and (min-width: 685px) {
   .slider{
     display: none;
+  }
+  .darkmode_switch{
+    display: block;
+  }
+  .switch_wrapper{
+    margin-left: 88%;
   }
 }
 
@@ -65,6 +102,7 @@
   .slider_btn{
     width: 100%;
     height: 100%;
+    color: var(--text-color);
   }
 }
 
@@ -81,11 +119,12 @@
 
 .project{
   height: 100%;
-  border: 3px solid white;
+  border: 3px solid var(--border-color);
   border-radius: 7px;
   display: flex;
   flex-direction: column;
   gap: 1rem;
+  box-shadow: var(--box-shadow-color);
 }
 
 .card_container{
@@ -139,7 +178,8 @@
 }
 
 .skill{
-  border: 2px solid white;
+  border: 2px solid var(--border-color);
+  box-shadow: var(--box-shadow-color2);
   border-radius: 15px;
   padding: 3%;
   animation: slideFromLeft 1s ease forwards;
@@ -175,10 +215,11 @@
 }
 
 .cert{
-  border: 2px solid white;
+  border: 2px solid var(--border-color);
+  box-shadow: var(--box-shadow-color2);
   border-radius: 15px;
   text-decoration: none;
-  color: white;
+  color: var(--text-color);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -220,7 +261,8 @@
   width: 100%;
   border-radius: 15px;
   opacity: 0;
-  background-color: rgb(71, 42, 42);
+  color: white;
+  background-color: var(--overlay-color);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -253,6 +295,7 @@
 .contact_icon{
   width: 100%;
   height: 100%;
+  color: var(--border-color);
 }
 
 .contact_container h1{
@@ -269,7 +312,7 @@
   display: flex;
   justify-content: space-around;
   align-items: center;
-  border-top: 2px dotted white;
+  border-top: 2px dotted var(--border-color);
   margin-top: 3%;
   margin-bottom: 0;
 }
@@ -280,12 +323,12 @@
 
 .link_list li{
   margin: 5% 0%;
-  border-bottom: 2px dotted white;
+  border-bottom: 2px dotted var(--border-color);
 }
 
 .link{
   text-decoration: none;
-  color: white;
+  color: var(--text-color);
 }
 
 .links{
@@ -294,7 +337,7 @@
 }
 
 .demo{
-  color: white;
+  color: var(--text-color);
   font-size: 1.2rem;
   padding-left: 0.5rem;
   margin-bottom: 0.5rem;
@@ -330,7 +373,7 @@
 
 .offcanvas_body, .offcanvas_header{
   background-color: rgba(0, 0, 0, 0.8);
-  color: white;
+  color: white
 }
 
 .side_menu{
@@ -378,26 +421,23 @@
 .divider_div{
   border: none;
   height: 1.5px;
-  background-color: white;
+  background-color: var(--text-color);
 }
 
-#filled-basic{
+.MuiTextField-root{
   color: black;
-  background-color: white;
+  background-color: var(--form-bg);
+  box-shadow: var(--box-shadow-color);
   animation: slideFromUp 1s ease forwards;
+  border-radius: 7px;
 }
 
-#filled-multiline-static{
-  color: black;
-  background-color: white;
-  animation: slideFromUp 1s ease forwards;
-}
 
 .contact_form{
   margin: 0 auto;
   display: flex;
   flex-direction: column;
-  gap: 2rem;
+  gap: 2.5rem;
   width: 60%;
 }
 
@@ -409,4 +449,11 @@
 
 .timeline{
   margin-top: 100px;
+}
+
+.darkmode_switch{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
 }

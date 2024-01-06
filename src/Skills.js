@@ -7,9 +7,6 @@ import { Fade } from 'react-reveal';
 const Skills = () => {
   return (
     <div className='skills_container'>
-      <div className='slider'>
-        <Slider/>
-      </div>
       <div>
         <h3>Skills:</h3>
         <div className='skill_list'>

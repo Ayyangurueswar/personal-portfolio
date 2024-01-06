@@ -5,9 +5,6 @@ import Slider from './Slider'
 const Projects = () => {
   return (
     <>
-      <div className='slider'>
-        <Slider/>
-      </div>
       <div className='project_container'>
         <Slide left>
           <div className='project'>

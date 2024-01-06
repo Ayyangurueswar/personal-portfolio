@@ -2,7 +2,6 @@ import React, {useState} from 'react';
 import { faEnvelope, faPhone } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faLinkedin, faGithub, faInstagram } from '@fortawesome/free-brands-svg-icons';
-import Slider from './Slider';
 import Fade from 'react-reveal/Fade';
 import TextField from '@mui/material/TextField';
 import LoadingButton from '@mui/lab/LoadingButton';
@@ -14,7 +13,7 @@ import IconButton from '@mui/material/IconButton';
 const Contact = () => {
   const [userName, setUserName] = useState('');
   const [userEmail, setUserEmail] = useState('');
-  const [message, setMessage] = useState('Your message');
+  const [message, setMessage] = useState('');
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState(false);
   const [alertMessage, setAlertMessage] = useState('');
@@ -36,6 +35,7 @@ const Contact = () => {
     }
     if(message === ''){
       setAlertMessage('Enter a message');
+      setError(true);
       setOpen(true);
       return;
     }
@@ -48,7 +48,7 @@ const Contact = () => {
       setOpen(true);
       setUserName('');
       setUserEmail('');
-      setMessage('Your message');
+      setMessage('');
     }).catch((e) => {
       setLoading(false);
       setAlertMessage("Error, try again");
@@ -57,25 +57,22 @@ const Contact = () => {
   }
   return (
     <div className='contact_container'>
-      <div className='slider'>
-        <Slider/>
-      </div>
       <h1>Connect with me</h1>
       <div className='contacts'>
         <a href='https://www.linkedin.com/in/ayyan-guru-eswar-a64827240/' className='contact_icon_wrap'>
-          <FontAwesomeIcon icon={faLinkedin} beat size="2xl" style={{color: "#d6d6d6",}} className='contact_icon'/>
+          <FontAwesomeIcon icon={faLinkedin} beat size="2xl"  className='contact_icon'/>
         </a>
         <a href='https://github.com/Ayyangurueswar' className='contact_icon_wrap'>
-          <FontAwesomeIcon icon={faGithub} beat size="2xl" style={{color: "#d6d6d6",}} className='contact_icon'/>
+          <FontAwesomeIcon icon={faGithub} beat size="2xl" className='contact_icon'/>
         </a>
         <a href='mailto:ayyan16.gbps@gmail.com' className='contact_icon_wrap'>
-          <FontAwesomeIcon icon={faEnvelope} beat size='2xl' style={{color: "#d6d6d6",}} className='contact_icon'/>
+          <FontAwesomeIcon icon={faEnvelope} beat size='2xl' className='contact_icon'/>
         </a>
         <a href="tel:+919600588036" className='contact_icon_wrap'>
-          <FontAwesomeIcon icon={faPhone} beat size='2xl' style={{color: "#d6d6d6",}} className='contact_icon'/>
+          <FontAwesomeIcon icon={faPhone} beat size='2xl' className='contact_icon'/>
         </a>
         <a href='https://www.instagram.com/ayyanguru/' className='contact_icon_wrap'>
-          <FontAwesomeIcon icon={faInstagram} beat size='2xl' style={{color: "#d6d6d6",}} className='contact_icon'/>
+          <FontAwesomeIcon icon={faInstagram} beat size='2xl' className='contact_icon'/>
         </a>
       </div>
       <div className='queries mb-5'>
@@ -100,10 +97,13 @@ const Contact = () => {
         <TextField id='filled-basic' label='Email' variant='filled' placeholder='Your email' 
         color='secondary' type='email' required onChange={(e) => {setUserEmail(e.target.value)}}
         error={error} value={userEmail}/>
-        <TextField
-          id="filled-multiline-static" label="Message" multiline rows={6}
-          variant="filled" color='secondary' required onChange={(e) => {setMessage(e.target.value)}}
-          value={message}/>
+         <TextField required onChange={(e) => {setMessage(e.target.value)}}
+          id="filled-basic" error={error} value={message}
+          label="Message"
+          multiline
+          maxRows={6} color='secondary'
+          variant="filled"
+        />
         <LoadingButton className='send_button' onClick={handleSubmit} loading={loading} type='submit'
           color='secondary'
           endIcon={<SendIcon />}

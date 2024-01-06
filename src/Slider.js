@@ -12,7 +12,7 @@ const Slider = () => {
   }
   return (
     <>
-        <FontAwesomeIcon icon={faBars} onClick={toggleShow} style={{color: 'white'}} className='slider_btn'/>
+        <FontAwesomeIcon icon={faBars} onClick={toggleShow} className='slider_btn'/>
         <Offcanvas show={show} onHide={toggleShow}>
             <Offcanvas.Header closeButton closeVariant='white' className='offcanvas_header'>
                 <Fade left>

@@ -1,7 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import Fade from 'react-reveal/Fade'
-import Slider from './Slider'
 import Timeline from '@mui/lab/Timeline';
 import TimelineItem from '@mui/lab/TimelineItem';
 import TimelineSeparator from '@mui/lab/TimelineSeparator';
@@ -16,9 +15,6 @@ import BusinessOutlinedIcon from '@mui/icons-material/BusinessOutlined';
 const About = () => {
   return (
     <>
-      <div className='slider'>
-        <Slider/>
-      </div>
       <div className='container-fluid d-flex flex-column justify-content-center gap-5'>
         <div className='container-fluid text-center d-flex flex-column gap-5'>
           <Fade bottom>
@@ -59,13 +55,12 @@ const About = () => {
                 sx={{ m: 'auto 0' }}
                 align="right"
                 variant="body2"
-                color="white"
               >
                 2019-2021
             </TimelineOppositeContent>
             <TimelineSeparator>
               <TimelineConnector />
-              <TimelineDot>
+              <TimelineDot color='error'>
                 <SchoolIcon />
               </TimelineDot>
               <TimelineConnector />
@@ -84,7 +79,6 @@ const About = () => {
                 sx={{ m: 'auto 0' }}
                 align="right"
                 variant="body2"
-                color="white"
               >
                 2021
             </TimelineOppositeContent>
@@ -109,7 +103,6 @@ const About = () => {
                 sx={{ m: 'auto 0' }}
                 align="right"
                 variant="body2"
-                color="white"
               >
                 08/2023 - 09/2023
             </TimelineOppositeContent>

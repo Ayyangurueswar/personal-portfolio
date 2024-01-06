@@ -9,7 +9,7 @@ const Footer = () => {
     <Fade bottom>
       <div className='footer'>
         <p>
-          Designed and developed with <FontAwesomeIcon icon={faHeart} bounce style={{color: "#dee0e3",}} /> and <FontAwesomeIcon icon={faFire} beat style={{color: "#c50d0d",}} /> by Ayyan.
+          Designed and developed with <FontAwesomeIcon icon={faHeart} bounce style={{color: "#c50d0d",}} /> and <FontAwesomeIcon icon={faFire} beat style={{color: "#c50d0d",}} /> by Ayyan.
         </p>
         <div className='links'>
           <h3>Quick links</h3>
