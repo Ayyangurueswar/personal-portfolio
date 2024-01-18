@@ -1,14 +1,13 @@
 import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faPython, faReact, faJs, faHtml5, faCss3, faBootstrap } from '@fortawesome/free-brands-svg-icons';
-import Slider from './Slider';
 import { Fade } from 'react-reveal';
 
 const Skills = () => {
   return (
     <div className='skills_container'>
       <div>
-        <h3>Skills:</h3>
+        <h3 className='mb-3'>Skills:</h3>
         <div className='skill_list'>
           <div className='skill'>
             <h4>Web technologies</h4>
@@ -45,7 +44,7 @@ const Skills = () => {
         </div>
         </div>
       <div>
-        <h3>Certifications:</h3>
+        <h3 className='mb-3'>Certifications:</h3>
         <div className='certifications'>
           <a href='https://drive.google.com/file/d/1TYuO2ofp1HgENRrCydOXZ05wq-o1diA0/view?usp=sharing' className='cert'>
             <div className='cert_wrapper'>

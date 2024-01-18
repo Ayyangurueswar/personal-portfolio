@@ -11,6 +11,9 @@ import Typography from '@mui/material/Typography';
 import SchoolIcon from '@mui/icons-material/School';
 import TimelineOppositeContent from '@mui/lab/TimelineOppositeContent';
 import BusinessOutlinedIcon from '@mui/icons-material/BusinessOutlined';
+import pic from './images/ayyan.jpg';
+import sidepic1 from './images/Dart-Aim-Transparent.png';
+import sidepic2 from './images/oz891c1p.png';
 
 const About = () => {
   return (
@@ -18,7 +21,7 @@ const About = () => {
       <div className='container-fluid d-flex flex-column justify-content-center gap-5'>
         <div className='container-fluid text-center d-flex flex-column gap-5'>
           <Fade bottom>
-            <img className='rounded-circle pic mt-5' src='images/ayyan.jpg' alt='ayyan' />
+            <img className='rounded-circle pic mt-5' src={pic} alt='ayyan' />
           </Fade>
           <Fade left>
             <p className='fs-3'>Hi there, This is Ayyan Guru Eswar - Frontend developer well versed
@@ -129,7 +132,7 @@ const About = () => {
         <Fade bottom>
           <div className='container-fluid d-flex flex-row border-primary border-5 justify-content-center
           gap-5'>
-            <img src='images/Dart-Aim-Transparent.png' alt='journey' className='rounded-circle side_pic' />
+            <img src={sidepic1} alt='journey' className='rounded-circle side_pic' />
               <div className='side_desc'>
                 <h2 className='h3'>What I aim for</h2>
                 <p className='fs-5'>
@@ -142,7 +145,7 @@ const About = () => {
         <Fade bottom>
           <div className='container-fluid d-flex flex-row border-primary border-5 justify-content-center
           gap-5'>
-            <img src='images/oz891c1p.png' alt='journey' className='rounded-circle side_pic' />
+            <img src={sidepic2} alt='journey' className='rounded-circle side_pic' />
               <div className='side_desc'>
                 <h2 className='h3'>Personal interests</h2>
                 <p className='fs-5'>Mostly it's coding and when it's not I love watching football and eSports</p>

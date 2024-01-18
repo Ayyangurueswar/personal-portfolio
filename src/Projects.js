@@ -1,15 +1,17 @@
 import React from 'react'
 import Slide from 'react-reveal/Slide'
-import Slider from './Slider'
+import project1 from './images/project1.png'
+import project2 from './images/project2.png'
+import project3 from './images/project3.png'
+import project4 from './images/project4.png'
 
 const Projects = () => {
   return (
-    <>
       <div className='project_container'>
         <Slide left>
           <div className='project'>
             <a href='https://github.com/Ayyangurueswar/food-delivery-app' className='card_container'>
-              <img src='images/project3.png' alt='food-delivery-app' className='card_image'></img>
+              <img src={project3} alt='food-delivery-app' className='card_image'></img>
             </a>
             <div className='description'>
               <h3>Food Delivery App</h3>
@@ -29,7 +31,7 @@ const Projects = () => {
         <Slide left>
           <div className='project'>
             <a href='https://github.com/Ayyangurueswar/tic-tac-toe-game' className='card_container'>
-              <img src='images/project2.png' alt='tic-tac-toe-game' className='card_image'></img>
+              <img src={project2} alt='tic-tac-toe-game' className='card_image'></img>
             </a>
             <div className='description'>
               <h3>Tic Tac Toe game</h3>
@@ -47,7 +49,7 @@ const Projects = () => {
         <Slide left>
           <div className='project'>
             <a href='https://ayyangurueswar.github.io/test-app/' className='card_container'>
-              <img src='images/project4.png' alt='markdown previewer' className='card_image'></img>
+              <img src={project4} alt='markdown previewer' className='card_image'></img>
             </a>
             <div className='description'>
               <h3>Markdown Previewer</h3>
@@ -64,7 +66,7 @@ const Projects = () => {
         <Slide left>
           <div className='project'>
             <a href='https://ayyangurueswar.github.io/bouncing-balls-game/' className='card_container'>
-              <img src='images/project1.png' alt='bouncing-balls-game' className='card_image'></img>
+              <img src={project1} alt='bouncing-balls-game' className='card_image'></img>
             </a>
             <div className='description'>
               <h3>Bouncing balls game</h3>
@@ -82,7 +84,6 @@ const Projects = () => {
         </div>
         </Slide>
       </div>
-    </>
   )
 }
 
