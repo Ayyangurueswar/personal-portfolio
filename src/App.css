@@ -19,7 +19,7 @@
 
 [data-theme='dark']{
   --text-color: white;
-  --bg: url('/public/images/OIP.jpeg');
+  --bg: url('/src/images/OIP.jpeg');
   --border-color: white;
   --hover-color: white;
   --text-hover-color: black;
