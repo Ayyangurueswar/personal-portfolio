@@ -37,7 +37,7 @@ const About = () => {
               <Link className='col col-md p-4 menu_btn' to={'/skills'}>
                 Skills and Certifications
               </Link>
-              <a href='https://drive.google.com/file/d/1TrVMXYO4QXPp_m-kd_qUEmZOlw2Ktgs4/view?usp=sharing' 
+              <a href='https://drive.google.com/file/d/1CJVpD3E6LArch5mEoo-7rDTQdATRQRVi/view?usp=sharing' 
               className='col col-md p-4 menu_btn'>
                 View Resume
               </a>

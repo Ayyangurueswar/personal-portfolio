@@ -16,7 +16,7 @@ const Footer = () => {
           <ul className='link_list'>
               <li><Link to={'/projects'} className='link'>Projects</Link></li>
               <li><Link to={'/skills'} className='link'>Skills and certifications</Link></li>
-              <li><a href='https://drive.google.com/file/d/1TrVMXYO4QXPp_m-kd_qUEmZOlw2Ktgs4/view?usp=sharing' className='link'>
+              <li><a href='https://drive.google.com/file/d/1CJVpD3E6LArch5mEoo-7rDTQdATRQRVi/view?usp=sharing' className='link'>
                   View Resume
                   </a>
               </li>
