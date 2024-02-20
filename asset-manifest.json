@@ -1,10 +1,11 @@
 {
   "files": {
     "main.css": "/personal-portfolio/static/css/main.666d93e4.css",
-    "main.js": "/personal-portfolio/static/js/main.2f8b0001.js",
+    "main.js": "/personal-portfolio/static/js/main.e6a1dc33.js",
     "static/js/787.7da95b79.chunk.js": "/personal-portfolio/static/js/787.7da95b79.chunk.js",
     "static/media/oz891c1p.png": "/personal-portfolio/static/media/oz891c1p.874dc0e7c898aa572d96.png",
     "static/media/project3.png": "/personal-portfolio/static/media/project3.08036e39a78c1c7b4dec.png",
+    "static/media/project5.png": "/personal-portfolio/static/media/project5.abe8cb79d1eb787153f7.png",
     "static/media/project2.png": "/personal-portfolio/static/media/project2.d96b4cad663755647588.png",
     "static/media/Dart-Aim-Transparent.png": "/personal-portfolio/static/media/Dart-Aim-Transparent.2bf46e5e5b99fdab3495.png",
     "static/media/ayyan.jpg": "/personal-portfolio/static/media/ayyan.ce2f85a1b3f3d0dc8c61.jpg",
@@ -12,11 +13,11 @@
     "static/media/project4.png": "/personal-portfolio/static/media/project4.83cb4c098cca16689921.png",
     "index.html": "/personal-portfolio/index.html",
     "main.666d93e4.css.map": "/personal-portfolio/static/css/main.666d93e4.css.map",
-    "main.2f8b0001.js.map": "/personal-portfolio/static/js/main.2f8b0001.js.map",
+    "main.e6a1dc33.js.map": "/personal-portfolio/static/js/main.e6a1dc33.js.map",
     "787.7da95b79.chunk.js.map": "/personal-portfolio/static/js/787.7da95b79.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.666d93e4.css",
-    "static/js/main.2f8b0001.js"
+    "static/js/main.e6a1dc33.js"
   ]
 }
