@@ -4,10 +4,31 @@ import project1 from './images/project1.png'
 import project2 from './images/project2.png'
 import project3 from './images/project3.png'
 import project4 from './images/project4.png'
+import project5 from './images/project5.png'
 
 const Projects = () => {
   return (
       <div className='project_container'>
+        <Slide left>
+          <div className='project'>
+            <a href='https://eventssite.vercel.app' className='card_container'>
+              <img src={project5} alt='events-site' className='card_image'></img>
+            </a>
+            <div className='description'>
+              <h3>Event management site</h3>
+              <p>A full stack event management site created using Next.js and Strapi CMS.</p>
+            </div>
+            <div className='features'>
+              <h4>Features:</h4>
+              <ul>
+                <li>Allows all users to view events and authenticated users to view, upload and edit events.</li>
+                <li>Restricts users to edit or delete the events they own</li>
+                <li>PostgreSQL is used as the database and cloudinary is used for storing images.</li>
+                <li>Fully styled using Tailwind CSS</li>
+              </ul>
+            </div>
+        </div>
+        </Slide>
         <Slide left>
           <div className='project'>
             <a href='https://github.com/Ayyangurueswar/food-delivery-app' className='card_container'>
