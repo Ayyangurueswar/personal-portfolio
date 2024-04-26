@@ -42,18 +42,13 @@
 }
 
 .pic{
-  width: 180px;
-  height: 180px;
-  margin: 0 auto;
+  width: 45%;
+  height: 12rem;
 }
 
 .side_pic{
   width: 140px;
   height: 140px;
-}
-
-.side_desc{
-  width: 50%;
 }
 
 #buttons{
@@ -110,20 +105,15 @@
   width: 100%;
   height: 100%;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 355px));
-  padding: 2%;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   justify-content: center;
   align-items: center;
   gap: 3rem;
 }
 
 .project{
-  height: 100%;
   border: 3px solid var(--border-color);
   border-radius: 7px;
-  display: flex;
-  flex-direction: column;
-  gap: 1rem;
   box-shadow: var(--box-shadow-color);
 }
 
@@ -135,10 +125,9 @@
 
 .card_image{
   width:100%;
-  height: 100%;
+  height: 18.5rem;
   object-fit: cover;
   object-position: center;
-  position: absolute;
 }
 
 
@@ -149,7 +138,6 @@
 
 .description, .features{
   padding-left: 0.5rem;
-  animation: slideFromUp 1s ease forwards;
 }
 
 .features ul{
@@ -367,10 +355,6 @@
   }
 }
 
-#side_content{
-  margin-top: 100px;
-}
-
 .offcanvas_body, .offcanvas_header{
   background-color: rgba(0, 0, 0, 0.8);
   color: white
@@ -447,13 +431,13 @@
   animation: slideFromUp 1s ease forwards;
 }
 
-.timeline{
-  margin-top: 100px;
-}
-
 .darkmode_switch{
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   width: 100%;
+}
+
+.carousel_next{
+  color: var(--border-color)
 }

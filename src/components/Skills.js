@@ -5,7 +5,7 @@ import { Fade } from 'react-reveal';
 
 const Skills = () => {
   return (
-    <div className='skills_container'>
+    <div className='skills_container mt-4 px-5'>
       <div>
         <h3 className='mb-3'>Skills:</h3>
         <div className='skill_list'>
@@ -44,7 +44,7 @@ const Skills = () => {
         </div>
         </div>
       <div>
-        <h3 className='mb-3'>Certifications:</h3>
+        <h3 className='mb-4'>Certifications:</h3>
         <div className='certifications'>
           <a href='https://drive.google.com/file/d/1TYuO2ofp1HgENRrCydOXZ05wq-o1diA0/view?usp=sharing' className='cert'>
             <div className='cert_wrapper'>

@@ -1,14 +1,15 @@
-import About from './About';
+import About from './components/About';
 import './App.css';
-import { HashRouter, Routes, Route } from 'react-router-dom';
-import Projects from './Projects';
-import Skills from './Skills';
-import Contact from './Contact';
+import Projects from './components/Projects';
+import Skills from './components/Skills';
+import Contact from './components/Contact';
 import 'bootstrap/dist/css/bootstrap.css'
+import 'bootstrap/dist/css/bootstrap.min.css';
+import 'bootstrap/dist/js/bootstrap.bundle.min.js';
 import { useState } from 'react';
-import DarkModeSwitch from './DarkModeSwitch';
-import Slider from './Slider';
-import Footer from './Footer';
+import DarkModeSwitch from './components/DarkModeSwitch';
+import Slider from './components/Slider';
+import Footer from './components/Footer';
 
 function App() {
   const [theme, setTheme] = useState(true);
@@ -16,7 +17,6 @@ function App() {
     setTheme((theme) => !theme);
   }
   return (
-    <HashRouter>
       <div className='whole_container' data-theme={theme ? 'light' : 'dark'}>
         <div className='darkmode_switch'>
         <div className='slider'>
@@ -26,15 +26,12 @@ function App() {
           <DarkModeSwitch toggleMode={toggleMode} theme={theme}/>
         </div>
         </div>
-        <Routes>
-          <Route path='/' element={<About/>} exact/>
-          <Route path='projects' element={<Projects/>} exact/>
-          <Route path='skills' element={<Skills/>} exact/>
-          <Route path='contact' element={<Contact/>} exact/>
-        </Routes>
+        <About />
+        <Skills />
+        <Projects />
+        <Contact />
         <Footer />
       </div>
-    </HashRouter>
   );
 }
 
