@@ -1,7 +1,7 @@
 import React from 'react'
 import { styled } from '@mui/material/styles';
 import FormControlLabel from '@mui/material/FormControlLabel';
-import Switch from '@mui/material/Switch';
+import { Switch } from '@mui/material';
 
 const DarkModeSwitch = ({toggleMode, theme}) => {
     const MaterialUISwitch = styled(Switch)(() => ({

@@ -13,14 +13,14 @@ const Footer = () => {
         <div className='links'>
           <h3>Quick links</h3>
           <ul className='link_list'>
-              <li><a href='/' className='link'>Projects</a></li>
-              <li><a href='/' className='link'>Skills and certifications</a></li>
+              <li><a href='#projects' className='link'>Projects</a></li>
+              <li><a href='#skills' className='link'>Skills and certifications</a></li>
               <li><a href='https://drive.google.com/file/d/1CJVpD3E6LArch5mEoo-7rDTQdATRQRVi/view?usp=sharing' className='link'>
                   View Resume
                   </a>
               </li>
-              <li><a href='/' className='link'>Contact</a></li>
-              <li><a href='/' className='link'>About</a></li>
+              <li><a href='#contact' className='link'>Contact</a></li>
+              <li><a href='#about' className='link'>About</a></li>
           </ul>
         </div>
       </div>

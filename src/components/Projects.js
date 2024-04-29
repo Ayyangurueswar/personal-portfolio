@@ -7,9 +7,9 @@ import project5 from '../images/project5.png'
 
 const Projects = () => {
   return (
-    <div className='px-5'>
+    <div className='px-5' id='projects'>
       <h2 className='my-4'>Projects:</h2>
-      <div id="carouselExampleCaptions" className="carousel slide project mx-auto" style={{width: '70%'}} data-bs-ride="carousel">
+      <div id="carouselExampleCaptions" className="carousel slide project mx-auto" data-bs-ride="carousel">
         <div className="carousel-indicators">
           <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" className="active bg-danger" aria-current="true" aria-label="Slide 1"></button>
           <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" className='bg-danger' aria-label="Slide 2"></button>
@@ -19,10 +19,11 @@ const Projects = () => {
         </div>
         <div className="carousel-inner">
           <div className="carousel-item active" data-bs-interval="7000">
+            <h4 className='d-md-none text-center p-3 bg-light text-dark'>Event management site</h4>
             <a href='https://eventssite.vercel.app' className='d-block w-100'>
               <img src={project5} alt='events-site' className='card_image'></img>
             </a>
-            <div style={{height: '18rem'}} className='d-flex flex-column align-items-center justify-content-center'>
+            <div style={{height: '18rem'}} className='d-md-flex flex-column align-items-center justify-content-center d-none'>
               <h4>Event management site</h4>
               <p>A full stack event management site created using Next.js and Strapi CMS.</p>
               <div className='features'>
@@ -37,10 +38,11 @@ const Projects = () => {
             </div>
           </div>
           <div className="carousel-item" data-bs-interval="7000">
+          <h4 className='d-md-none text-center p-3 bg-light text-dark'>Food delivery app</h4>
             <a href='https://github.com/Ayyangurueswar/food-delivery-app'>
               <img src={project3} alt='food-delivery-app' className='card_image'></img>
             </a>
-            <div style={{height: '18rem'}} className='d-flex flex-column align-items-center justify-content-center'>
+            <div style={{height: '18rem'}} className='d-md-flex d-none flex-column align-items-center justify-content-center'>
               <h4>Food Delivery App</h4>
               <p>A food delivery app created using MERN stack technologies</p>
               <div className='features'>
@@ -55,10 +57,11 @@ const Projects = () => {
             </div>
           </div>
           <div className="carousel-item" data-bs-interval="7000">
+            <h4 className='d-md-none text-center p-3 bg-light text-dark'>Markdown previewer</h4>
             <a href='https://ayyangurueswar.github.io/test-app/'>
               <img src={project4} alt='markdown previewer' className='card_image'></img>
             </a>
-            <div style={{height: '18rem'}} className='d-flex flex-column align-items-center justify-content-center'>
+            <div style={{height: '18rem'}} className='d-md-flex d-none flex-column align-items-center justify-content-center'>
               <h4>Markdown Previewer</h4>
               <p>Markdown Previewer built using React and Marked library</p>
               <div className='features'>
@@ -69,11 +72,12 @@ const Projects = () => {
               </div>
             </div>
           </div>
-          <div class="carousel-item" data-bs-interval="7000">
+          <div className="carousel-item" data-bs-interval="7000">
+            <h4 className='d-md-none text-center p-3 bg-light text-dark'>Tic Tac Toe game</h4>
             <a href='https://github.com/Ayyangurueswar/tic-tac-toe-game'>
               <img src={project2} alt='tic-tac-toe-game' className='card_image'></img>
             </a>
-            <div style={{height: '18rem'}} className='d-flex flex-column align-items-center justify-content-center'>
+            <div style={{height: '18rem'}} className='d-md-flex d-none flex-column align-items-center justify-content-center'>
               <h4>Tic Tac Toe game</h4>
               <p>A simple Tic Tac Toe game created using React.js</p>
               <div className='features'>
@@ -86,10 +90,11 @@ const Projects = () => {
             </div>
           </div>
           <div className="carousel-item" data-bs-interval="7000">
+            <h4 className='d-md-none text-center p-3 bg-light text-dark'>Bouncing balls</h4>
             <a href='https://ayyangurueswar.github.io/bouncing-balls-game/'>
               <img src={project1} alt='bouncing-balls-game' className='card_image'></img>
             </a>
-            <div style={{height: '18rem'}} className='d-flex flex-column align-items-center justify-content-center'>
+            <div style={{height: '18rem'}} className='d-md-flex d-none flex-column align-items-center justify-content-center'>
               <h4>Bouncing balls game</h4>
               <p>Simple bouncing balls game created using JavaScript, CSS and HTML</p>
               <div className='features'>

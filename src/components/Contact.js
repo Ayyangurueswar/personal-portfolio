@@ -3,7 +3,7 @@ import { faEnvelope, faPhone } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faLinkedin, faGithub, faInstagram } from '@fortawesome/free-brands-svg-icons';
 import Fade from 'react-reveal/Fade';
-import TextField from '@mui/material/TextField';
+import { TextField } from '@mui/material';
 import LoadingButton from '@mui/lab/LoadingButton';
 import SendIcon from '@mui/icons-material/Send';
 import Snackbar from '@mui/material/Snackbar';
@@ -56,7 +56,7 @@ const Contact = () => {
     });
   }
   return (
-    <div className='contact_container'>
+    <div className='contact_container mt-3' id='contact'>
       <h1>Connect with me</h1>
       <div className='contacts'>
         <a href='https://www.linkedin.com/in/ayyan-guru-eswar-a64827240/' className='contact_icon_wrap'>

@@ -7,9 +7,8 @@ import 'bootstrap/dist/css/bootstrap.css'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.bundle.min.js';
 import { useState } from 'react';
-import DarkModeSwitch from './components/DarkModeSwitch';
-import Slider from './components/Slider';
 import Footer from './components/Footer';
+import Header from './components/Header';
 
 function App() {
   const [theme, setTheme] = useState(true);
@@ -18,14 +17,7 @@ function App() {
   }
   return (
       <div className='whole_container' data-theme={theme ? 'light' : 'dark'}>
-        <div className='darkmode_switch'>
-        <div className='slider'>
-          <Slider/>
-        </div>
-        <div className='switch_wrapper'>
-          <DarkModeSwitch toggleMode={toggleMode} theme={theme}/>
-        </div>
-        </div>
+        <Header toggleMode={toggleMode} theme={theme}/>
         <About />
         <Skills />
         <Projects />

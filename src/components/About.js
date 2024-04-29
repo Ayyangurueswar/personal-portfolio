@@ -1,14 +1,8 @@
 import React from 'react'
 import Fade from 'react-reveal/Fade'
-import Timeline from '@mui/lab/Timeline';
-import TimelineItem from '@mui/lab/TimelineItem';
-import TimelineSeparator from '@mui/lab/TimelineSeparator';
-import TimelineConnector from '@mui/lab/TimelineConnector';
-import TimelineContent from '@mui/lab/TimelineContent';
-import TimelineDot from '@mui/lab/TimelineDot';
-import Typography from '@mui/material/Typography';
+import { Typography } from '@mui/material';
 import SchoolIcon from '@mui/icons-material/School';
-import TimelineOppositeContent from '@mui/lab/TimelineOppositeContent';
+import { TimelineOppositeContent, Timeline, TimelineConnector, TimelineDot, TimelineContent, TimelineItem, TimelineSeparator } from '@mui/lab';
 import BusinessOutlinedIcon from '@mui/icons-material/BusinessOutlined';
 import pic from '../images/ayyan.jpg';
 import sidepic1 from '../images/Dart-Aim-Transparent.png';
@@ -17,19 +11,22 @@ import sidepic2 from '../images/oz891c1p.png';
 const About = () => {
   return (
     <>
-      <div className='mx-auto text-center d-flex align-items-center gap-5 px-5 mt-5 flex-column flex-md-row' style={{width: '85%'}}>
+      <div className='mx-auto text-center d-flex align-items-center gap-5 px-5 mt-5 flex-column flex-md-row' style={{width: '85%'}} id='about'>
         <Fade bottom>
           <img className='rounded-circle pic' src={pic} alt='ayyan' />
         </Fade>
         <Fade left>
-          <p className='fs-3'>Hi there, This is Ayyan Guru Eswar - Frontend developer well versed
+        <div>
+          <p className='fs-3 mb-4'>Hi there, This is Ayyan Guru Eswar - Frontend developer well versed
             in React.js and with strong basics of HTML, CSS and JavaScript.
           </p>
+          <a href='https://drive.google.com/file/d/1W61_9sepqxg73_tN0wOCB2NPnsc-6Y0D/view?usp=sharing' className='menu_btn px-4 py-2'>View resume</a>
+        </div>
         </Fade>
       </div>
       <div className='my-5'>
         <Fade bottom>
-          <h2 className='text-center mb-5'>Journey so far...</h2>
+          <h2 className='text-center mb-3'>Journey so far...</h2>
         </Fade>
         <Fade bottom>
         <Timeline position='alternate'>
