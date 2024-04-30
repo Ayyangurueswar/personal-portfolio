@@ -11,7 +11,7 @@ import sidepic2 from '../images/oz891c1p.png';
 const About = () => {
   return (
     <>
-      <div className='mx-auto text-center d-flex align-items-center gap-5 px-5 mt-5 flex-column flex-md-row' style={{width: '85%'}} id='about'>
+      <div className='mx-auto text-center d-flex align-items-center gap-5 px-3 mt-5 flex-column flex-md-row' style={{width: '85%'}} id='about'>
         <Fade bottom>
           <img className='rounded-circle pic' src={pic} alt='ayyan' />
         </Fade>
