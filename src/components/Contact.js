@@ -56,8 +56,8 @@ const Contact = () => {
     });
   }
   return (
-    <div className='contact_container mt-3' id='contact'>
-      <h1>Connect with me</h1>
+    <div className='contact_container mt-5' id='contact'>
+      <h3 className='text-center text-decoration-underline'>Connect with me</h3>
       <div className='contacts'>
         <a href='https://www.linkedin.com/in/ayyan-guru-eswar-a64827240/' className='contact_icon_wrap'>
           <FontAwesomeIcon icon={faLinkedin} beat size="2xl"  className='contact_icon'/>
@@ -76,7 +76,7 @@ const Contact = () => {
         </a>
       </div>
       <div className='queries mb-5'>
-        <p>
+        <p className='fs-5'>
           I am currently open to work in SDE intern or front-end developer intern roles so do
           get in touch if you think I can fit in.
         </p>
@@ -90,7 +90,7 @@ const Contact = () => {
           <div className='divider_div'></div>
         </Fade>
       </div>
-      <h3 className='text-center mb-5'>Send a message</h3>
+      <h3 className='text-center mb-5 text-decoration-underline'>Send a message</h3>
       <form className='contact_form'>
         <TextField id='filled-basic' label='Name' variant='filled' placeholder='Your name' 
         color='secondary' type='text' onChange={(e) => {setUserName(e.target.value)}} value={userName}/>

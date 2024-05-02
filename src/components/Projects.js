@@ -1,121 +1,31 @@
 import React from 'react'
-import project1 from '../images/project1.png'
-import project2 from '../images/project2.png'
-import project3 from '../images/project3.png'
-import project4 from '../images/project4.png'
-import project5 from '../images/project5.png'
+import projects from '../lib/projects'
+import ProjectCard from './ProjectCard'
 
 const Projects = () => {
   return (
     <div className='px-5' id='projects'>
-      <h2 className='my-4'>Projects:</h2>
+      <h2 className='my-4 text-decoration-underline'>Projects:</h2>
       <div id="carouselExampleCaptions" className="carousel slide project mx-auto" data-bs-ride="carousel">
         <div className="carousel-indicators">
-          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" className="active bg-danger" aria-current="true" aria-label="Slide 1"></button>
-          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" className='bg-danger' aria-label="Slide 2"></button>
-          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" className='bg-danger' aria-label="Slide 3"></button>
-          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" className='bg-danger' aria-label="Slide 4"></button>
-          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="4" className='bg-danger' aria-label="Slide 5"></button>
+          {
+            projects.map((project) => (
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to={String(project.id-1)} className={`bg-danger ${project.id-1 === 0 ? 'active' : ''}`} aria-label={project.title} key={project.id}></button>
+            ))
+          }
         </div>
         <div className="carousel-inner">
-          <div className="carousel-item active" data-bs-interval="7000">
-            <h4 className='d-md-none text-center p-3 bg-light text-dark'>Event management site</h4>
-            <a href='https://eventssite.vercel.app' className='d-block w-100'>
-              <img src={project5} alt='events-site' className='card_image'></img>
-            </a>
-            <div style={{height: '18rem'}} className='d-md-flex flex-column align-items-center justify-content-center d-none'>
-              <h4>Event management site</h4>
-              <p>A full stack event management site created using Next.js and Strapi CMS.</p>
-              <div className='features'>
-                <h5>Features:</h5>
-                <ul>
-                  <li>Allows all users to view events and authenticated users to view, upload and edit events.</li>
-                  <li>Restricts users to edit or delete the events they own</li>
-                  <li>PostgreSQL is used as the database and cloudinary is used for storing images.</li>
-                  <li>Fully styled using Tailwind CSS</li>
-                </ul>
-              </div>
-            </div>
-          </div>
-          <div className="carousel-item" data-bs-interval="7000">
-          <h4 className='d-md-none text-center p-3 bg-light text-dark'>Food delivery app</h4>
-            <a href='https://github.com/Ayyangurueswar/food-delivery-app'>
-              <img src={project3} alt='food-delivery-app' className='card_image'></img>
-            </a>
-            <div style={{height: '18rem'}} className='d-md-flex d-none flex-column align-items-center justify-content-center'>
-              <h4>Food Delivery App</h4>
-              <p>A food delivery app created using MERN stack technologies</p>
-              <div className='features'>
-                <h5>Features</h5>
-                <ul>
-                  <li>Allows the user to place and view orders</li>
-                  <li>Added user authentication</li>
-                  <li>Integrated third party APIs like mailtrap(for user authentication) and stripe(for payments)</li>
-                </ul>
-              </div>
-              <a href='https://www.youtube.com/watch?v=okGTQ4LMmMM' className='demo mt-1 fs-5'>Demo</a>
-            </div>
-          </div>
-          <div className="carousel-item" data-bs-interval="7000">
-            <h4 className='d-md-none text-center p-3 bg-light text-dark'>Markdown previewer</h4>
-            <a href='https://ayyangurueswar.github.io/test-app/'>
-              <img src={project4} alt='markdown previewer' className='card_image'></img>
-            </a>
-            <div style={{height: '18rem'}} className='d-md-flex d-none flex-column align-items-center justify-content-center'>
-              <h4>Markdown Previewer</h4>
-              <p>Markdown Previewer built using React and Marked library</p>
-              <div className='features'>
-                <h5>Features</h5>
-                <ul>
-                  <li>Renders github flavoured markdown as HTML elements</li>
-                </ul>
-              </div>
-            </div>
-          </div>
-          <div className="carousel-item" data-bs-interval="7000">
-            <h4 className='d-md-none text-center p-3 bg-light text-dark'>Tic Tac Toe game</h4>
-            <a href='https://github.com/Ayyangurueswar/tic-tac-toe-game'>
-              <img src={project2} alt='tic-tac-toe-game' className='card_image'></img>
-            </a>
-            <div style={{height: '18rem'}} className='d-md-flex d-none flex-column align-items-center justify-content-center'>
-              <h4>Tic Tac Toe game</h4>
-              <p>A simple Tic Tac Toe game created using React.js</p>
-              <div className='features'>
-                <h5>Features</h5>
-                <ul>
-                  <li>Allows the user to track the moves</li>
-                  <li>Moves can be sorted in either ascending or descending order</li>
-                </ul>
-              </div>
-            </div>
-          </div>
-          <div className="carousel-item" data-bs-interval="7000">
-            <h4 className='d-md-none text-center p-3 bg-light text-dark'>Bouncing balls</h4>
-            <a href='https://ayyangurueswar.github.io/bouncing-balls-game/'>
-              <img src={project1} alt='bouncing-balls-game' className='card_image'></img>
-            </a>
-            <div style={{height: '18rem'}} className='d-md-flex d-none flex-column align-items-center justify-content-center'>
-              <h4>Bouncing balls game</h4>
-              <p>Simple bouncing balls game created using JavaScript, CSS and HTML</p>
-              <div className='features'>
-                <h5>Controls:</h5>
-                <ul>
-                  <li>W - Move up</li>
-                  <li>S - Move down</li>
-                  <li>A - Move left</li>
-                  <li>D - Move right</li>
-                </ul>
-              </div>
-            </div>
-          </div>
+          {
+            projects.map((project) => (
+              <ProjectCard project={project} key={project.id}/>
+            ))
+          }
         </div>
-        <button className="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
-          <span className="fs-1 carousel_next" aria-hidden="true">&lt;</span>
-          <span className="visually-hidden">Previous</span>
+        <button className="carousel-control-prev carousel_next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+          <p className="fs-1 mb-0" aria-hidden="true">&lt;</p>
         </button>
-        <button className="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
-          <span className="fs-1 carousel_next" aria-hidden="true">&gt;</span>
-          <span className="visually-hidden">Next</span>
+        <button className="carousel-control-next carousel_next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+          <span className="fs-1" aria-hidden="true">&gt;</span>
         </button>
       </div>
     </div>

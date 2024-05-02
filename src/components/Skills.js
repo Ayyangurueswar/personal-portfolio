@@ -61,7 +61,7 @@ const Skills = () => {
   return (
     <div className='skills_container mt-4 px-5' id='skills'>
       <div>
-        <h3>Skills:</h3>
+        <h3 className='text-decoration-underline'>Skills:</h3>
         <span>(hover to see more)</span>
         <PieChart series={[{
           data: skills,
@@ -83,7 +83,7 @@ const Skills = () => {
         </div>
       </div>
       <div>
-        <h3 className='mb-4'>Certifications:</h3>
+        <h3 className='mb-4 text-decoration-underline'>Certifications:</h3>
         <div className='certifications'>
           <a href='https://drive.google.com/file/d/1U_4_WqmEzYOXJnWx60qf6f3n_Z8-e-pX/view?usp=sharing' className='cert'>
             <div className='cert_wrapper'>

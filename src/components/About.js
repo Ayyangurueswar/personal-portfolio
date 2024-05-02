@@ -26,7 +26,7 @@ const About = () => {
       </div>
       <div className='my-5'>
         <Fade bottom>
-          <h2 className='text-center mb-3'>Journey so far...</h2>
+          <h3 className='text-center mb-3 text-decoration-underline'>Journey so far...</h3>
         </Fade>
         <Fade bottom>
         <Timeline position='alternate'>
@@ -110,7 +110,7 @@ const About = () => {
           <div className='w-75 d-flex flex-row justify-content-around'>
             <img src={sidepic1} alt='journey' className='rounded-circle side_pic' />
             <div className='w-50'>
-              <h2 className='h3'>What I aim for</h2>
+              <h4>What I aim for:</h4>
               <p className='fs-5'>
                 I look forward to contribute to real world projects by collaborating with like minded people
                 and gain some valuable knowledge.
@@ -122,7 +122,7 @@ const About = () => {
           <div className='w-75 d-flex flex-row justify-content-around gap-5'>
             <img src={sidepic2} alt='journey' className='rounded-circle side_pic' />
             <div style={{width: '52%'}}>
-              <h2 className='h3'>Personal interests</h2>
+              <h4>Personal interests</h4>
               <p className='fs-5'>Mostly it's coding and when it's not I love watching football and playing eSports</p>
             </div>
           </div>
