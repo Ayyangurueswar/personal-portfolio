@@ -6,7 +6,7 @@
 
 :root{
   --text-color: black;
-  --bg: rgb(234, 233, 233);
+  --bg: url('/src/images/watercolor-background-design_23-2148481362.avif');
   --border-color: rgb(218, 7, 218);
   --hover-color: rgb(181, 33, 181);
   --text-hover-color: white;
@@ -41,11 +41,19 @@
   transition: all 1s ease;
 }
 
-.pic{
-  width: 45%;
-  height: 12rem;
+.about_aside{
+  width: 65%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
 }
 
+.pic{
+  width: 300px;
+  height: 300px;
+  box-shadow: var(--box-shadow-color2);
+}
+    
 .side_pic{
   width: 140px;
   height: 140px;
@@ -66,6 +74,14 @@
   color: var(--text-hover-color);
 }
 
+#about{
+  max-width: 1210px;
+  width: 100%;
+  margin: 0 auto;
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
 @media screen and (min-width: 768px) {
   .slider{
     display: none;
@@ -75,6 +91,9 @@
   }
   #carouselExampleCaptions{
     width: 75%;
+  }
+  #about{
+    height: 81vh;
   }
 }
 
@@ -95,11 +114,18 @@
   #carouselExampleCaptions{
     width: 100%;
   }
+  .card_image{
+    height: 400px;
+  }
 }
 
 @media screen and (max-width:828px){
   #projects{
     margin-top: 6rem;
+  }
+  .pic{
+    width: 230px;
+    height: 230px;
   }
 }
 
@@ -117,9 +143,10 @@
 
 .card_image{
   width:100%;
-  height: 18.5rem;
+  height: 600px;
   object-fit: cover;
   object-position: center;
+  position: relative;
 }
 
 
@@ -130,6 +157,7 @@
 
 .description, .features{
   padding-left: 0.5rem;
+  width: 60%;
 }
 
 .features ul{
@@ -317,7 +345,6 @@
 }
 
 .demo{
-  color: var(--text-color);
   font-size: 1.2rem;
   padding-left: 0.5rem;
   margin-bottom: 0.5rem;
@@ -430,15 +457,6 @@
   width: 100%;
 }
 
-button.carousel_next{
-  border-radius: 100%;
-  height: 45px;
-  width: 45px;
-  margin-top: auto;
-  margin-bottom: auto;
-  background: #000;
-}
-
 #header{
   position: sticky;
   top: 0;
@@ -453,9 +471,22 @@ button.carousel_next{
 }
 
 .nav_link{
-  transition: all 0.2s ease-in-out;
+  width: 0;
+  height: 2px;
+  background-color: white;
+  transition: all 0.3s;
 }
 
-.nav_link:hover{
-  transform: scale(1.15);
+.nav_parent:hover .nav_link{
+  width: 100%;
+}
+
+.overlay{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgb(34,5,36);
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.9) 35%, rgba(54, 54, 54, 0.5) 100%);
 }

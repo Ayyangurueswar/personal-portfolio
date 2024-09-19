@@ -10,7 +10,7 @@ const Projects = () => {
         <div className="carousel-indicators">
           {
             projects.map((project) => (
-              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to={String(project.id-1)} className={`bg-danger ${project.id-1 === 0 ? 'active' : ''}`} aria-label={project.title} key={project.id}></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to={String(project.id-1)} className={`bg-light ${project.id-1 === 0 ? 'active' : ''}`} aria-label={project.title} key={project.id}></button>
             ))
           }
         </div>
@@ -21,10 +21,10 @@ const Projects = () => {
             ))
           }
         </div>
-        <button className="carousel-control-prev carousel_next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+        <button className="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
           <p className="fs-1 mb-0" aria-hidden="true">&lt;</p>
         </button>
-        <button className="carousel-control-next carousel_next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+        <button className="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
           <span className="fs-1" aria-hidden="true">&gt;</span>
         </button>
       </div>

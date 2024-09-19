@@ -11,20 +11,20 @@ import sidepic2 from '../images/oz891c1p.png';
 const About = () => {
   return (
     <>
-      <div className='mx-auto text-center d-flex align-items-center gap-5 px-3 mt-5 flex-column flex-md-row' style={{width: '85%'}} id='about'>
+      <div className='d-flex align-items-center justify-content-between flex-column flex-md-row mt-4' id='about'>
         <Fade bottom>
-          <img className='rounded-circle pic' src={pic} alt='ayyan' />
+          <img className='rounded-circle pic mb-5 mt-5 mt-md-0' src={pic} alt='ayyan'/>
         </Fade>
-        <Fade left>
-        <div>
-          <p className='fs-3 mb-4'>Hi there, This is Ayyan Guru Eswar - Frontend developer well versed
-            in React.js and with strong basics of HTML, CSS and JavaScript.
+        <Fade bottom>
+        <div className='mb-5 about_aside'>
+          <p className='fs-3 mb-4 text-center'>Hi there, This is Ayyan Guru Eswar - Frontend developer with experience building web applications 
+            using Next.js and React.js.  I'm always excited to learn about the latest technologies and apply them to create awesome web experiences.
           </p>
-          <a href='https://drive.google.com/file/d/1W61_9sepqxg73_tN0wOCB2NPnsc-6Y0D/view?usp=sharing' className='menu_btn px-4 py-2'>View resume</a>
+          <a href='https://drive.google.com/file/d/138YhbTCPA_22bXhmBCWi9SFp-glAcLDP/view?usp=sharing' className='menu_btn px-4 py-2'>View resume</a>
         </div>
         </Fade>
       </div>
-      <div className='my-5'>
+      <div className='mb-5 mt-xl-5'>
         <Fade bottom>
           <h3 className='text-center mb-3 text-decoration-underline'>Journey so far...</h3>
         </Fade>
@@ -71,10 +71,10 @@ const About = () => {
             </TimelineSeparator>
             <TimelineContent sx={{ py: '12px', px: 2 }}>
               <Typography variant="h6" component="span">
-                Indian Institute of Information Technology Tiruchirappalli
+              B.Tech in Electronics and Communication Engineering
               </Typography>
               <Typography>
-                B.Tech in Electronics and Communication Engineering. CGPA: 7.92.
+                from Indian Institute of Information Technology Tiruchirappalli. CGPA: 7.92.
               </Typography>
             </TimelineContent>
           </TimelineItem>
@@ -102,10 +102,58 @@ const About = () => {
               </Typography>
             </TimelineContent>
           </TimelineItem>
+          <TimelineItem>
+          <TimelineOppositeContent
+                sx={{ m: 'auto 0' }}
+                align="right"
+                variant="body2"
+              >
+                05/2024 - 06/2024
+            </TimelineOppositeContent>
+            <TimelineSeparator>
+              <TimelineConnector />
+              <TimelineDot color='primary'>
+                <BusinessOutlinedIcon />
+              </TimelineDot>
+              <TimelineConnector />
+            </TimelineSeparator>
+            <TimelineContent sx={{ py: '12px', px: 2 }}>
+              <Typography variant="h6" component="span">
+                React.js developer at Freshtronics Technologies
+              </Typography>
+              <Typography>
+                Developed reusable React and React Native components for a healthcare application.
+              </Typography>
+            </TimelineContent>
+          </TimelineItem>
+          <TimelineItem>
+          <TimelineOppositeContent
+                sx={{ m: 'auto 0' }}
+                align="right"
+                variant="body2"
+              >
+                06/2024 - 08/2024
+            </TimelineOppositeContent>
+            <TimelineSeparator>
+              <TimelineConnector />
+              <TimelineDot color='primary'>
+                <BusinessOutlinedIcon />
+              </TimelineDot>
+              <TimelineConnector />
+            </TimelineSeparator>
+            <TimelineContent sx={{ py: '12px', px: 2 }}>
+              <Typography variant="h6" component="span">
+                Full stack developer at Pie Multilingual Services Private Limited
+              </Typography>
+              <Typography>
+                Worked on the re-development of the company's official website using Next.js and Strapi CMS.
+              </Typography>
+            </TimelineContent>
+          </TimelineItem>
         </Timeline>
         </Fade>
       </div>
-      <div className='container-fluid d-flex flex-column align-items-center gap-5 my-5'>
+      <div className='container-fluid d-flex flex-column align-items-center gap-5 mt-5'>
         <Fade bottom>
           <div className='w-75 d-flex flex-row justify-content-around'>
             <img src={sidepic1} alt='journey' className='rounded-circle side_pic' />

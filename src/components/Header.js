@@ -8,13 +8,12 @@ const Header = ({toggleMode, theme}) => {
   const handleScroll = () => {
     const currentScrollPos = window.scrollY;
     const isVisible = currentScrollPos < 10 || (prevScrollPos > currentScrollPos);
-    console.log(isVisible);
     setPrevScrollPos(currentScrollPos);
     setVisible(isVisible);
   };
   useEffect(() => {
     window.addEventListener('scroll', handleScroll);
-
+    
     return () => {
       window.removeEventListener('scroll', handleScroll);
     };
@@ -25,11 +24,26 @@ const Header = ({toggleMode, theme}) => {
                 <Slider/>
             </div>
             <div className={`mx-auto d-md-flex d-none flex-md-row  gap-5 align-items-center`}>
-              <a href='#about' className='text-decoration-none text-light nav_link'>About</a>
-              <a href='https://drive.google.com/file/d/1W61_9sepqxg73_tN0wOCB2NPnsc-6Y0D/view?usp=sharing' className='text-decoration-none text-light nav_link'>View resume</a>
-              <a href='#skills' className='text-decoration-none text-light nav_link'>Skills and certifications</a>
-              <a href='#projects' className='text-decoration-none text-light nav_link'>Projects</a>
-              <a href='#contact' className='text-decoration-none text-light nav_link'>Contact</a>
+              <div className='nav_parent'>
+                <a href='#about' className='text-light text-decoration-none'>About</a>
+                <div className='nav_link'></div>
+              </div>
+              <div className='nav_parent'>
+                <a href='https://drive.google.com/file/d/138YhbTCPA_22bXhmBCWi9SFp-glAcLDP/view?usp=sharing' className='text-light text-decoration-none'>View resume</a>
+                <div className='nav_link'></div>
+              </div>
+              <div className='nav_parent'>
+                <a href='#skills' className='text-light text-decoration-none'>Skills and certifications</a>
+                <div className='nav_link'></div>
+              </div>
+              <div className='nav_parent'>
+                <a href='#projects' className='text-light text-decoration-none'>Projects</a>
+                <div className='nav_link'></div>
+              </div>
+              <div className='nav_parent'>
+                <a href='#contact' className='text-light text-decoration-none'>Contact</a>
+                <div className='nav_link'></div>
+              </div>
             </div>
             <div className='switch_wrapper'>
                 <DarkModeSwitch toggleMode={toggleMode} theme={theme}/>

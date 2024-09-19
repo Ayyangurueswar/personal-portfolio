@@ -71,13 +71,10 @@ const Contact = () => {
         <a href="tel:+919600588036" className='contact_icon_wrap'>
           <FontAwesomeIcon icon={faPhone} beat size='2xl' className='contact_icon'/>
         </a>
-        <a href='https://www.instagram.com/ayyanguru/' className='contact_icon_wrap'>
-          <FontAwesomeIcon icon={faInstagram} beat size='2xl' className='contact_icon'/>
-        </a>
       </div>
       <div className='queries mb-5'>
         <p className='fs-5'>
-          I am currently open to work in SDE intern or front-end developer intern roles so do
+          I am currently open to work in SDE or front-end developer roles so do
           get in touch if you think I can fit in.
         </p>
       </div>
