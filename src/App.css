@@ -332,11 +332,18 @@
 .link_list li{
   margin: 5% 0%;
   border-bottom: 2px dotted var(--border-color);
+  transition: border 1s ease;
+}
+
+.link_list li:hover{
+  border-bottom: 2px solid var(--border-color);
 }
 
 .link{
   text-decoration: none;
   color: var(--text-color);
+  display: block;
+  width: 100%;
 }
 
 .links{

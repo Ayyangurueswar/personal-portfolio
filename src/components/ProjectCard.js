@@ -3,13 +3,15 @@ import React from 'react'
 const ProjectCard = ({project}) => {
   return (
     <div className={`carousel-item ${project.id === 1 ? 'active' : ''}`} data-bs-interval="7000">
-        <a href={project.projectURL}>
-            <img src={project.image} alt={project.title} className='card_image'></img>
-        </a>
+        <img src={project.image} alt={project.title} className='card_image'></img>
         <div className='overlay d-md-block d-flex align-items-center justify-content-center'>
-        <h4 className='d-md-none text-center p-3 text-light'>{project.title}</h4>
+        <h4 className='d-md-none text-center p-3'>
+            <a href={project.projectURL} className='text-light'>{project.title}</a>
+        </h4>
         <div style={{height: '18rem', position: 'absolute', top: '50%', color: 'white'}} className='d-md-flex d-none flex-column align-items-center justify-content-center w-100'>
-            <h4>{project.title}</h4>
+            <h4>
+                <a href={project.projectURL} className='text-light'>{project.title}</a>
+            </h4>
             <p>{project.description}</p>
             <div className='features'>
             <h5>{project.id === 6 ? 'Controls' : 'Features'}</h5>
