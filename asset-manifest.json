@@ -1,24 +1,27 @@
 {
   "files": {
-    "main.css": "/personal-portfolio/static/css/main.56e34caa.css",
-    "main.js": "/personal-portfolio/static/js/main.542bb271.js",
+    "main.css": "/personal-portfolio/static/css/main.391747eb.css",
+    "main.js": "/personal-portfolio/static/js/main.2657e5e8.js",
     "static/js/787.7da95b79.chunk.js": "/personal-portfolio/static/js/787.7da95b79.chunk.js",
-    "static/media/oz891c1p.png": "/personal-portfolio/static/media/oz891c1p.874dc0e7c898aa572d96.png",
-    "static/media/project3.png": "/personal-portfolio/static/media/project3.08036e39a78c1c7b4dec.png",
-    "static/media/project5.png": "/personal-portfolio/static/media/project5.abe8cb79d1eb787153f7.png",
-    "static/media/project2.png": "/personal-portfolio/static/media/project2.d96b4cad663755647588.png",
-    "static/media/project6.png": "/personal-portfolio/static/media/project6.5590dab84b51b723e9a9.png",
-    "static/media/Dart-Aim-Transparent.png": "/personal-portfolio/static/media/Dart-Aim-Transparent.2bf46e5e5b99fdab3495.png",
-    "static/media/ayyan.jpg": "/personal-portfolio/static/media/ayyan.ce2f85a1b3f3d0dc8c61.jpg",
-    "static/media/project1.png": "/personal-portfolio/static/media/project1.d2b5f4032d26430ea754.png",
-    "static/media/project4.png": "/personal-portfolio/static/media/project4.83cb4c098cca16689921.png",
+    "static/media/dark.webp": "/personal-portfolio/static/media/dark.ad26b7767ec65b87cd5a.webp",
+    "static/media/project3.webp": "/personal-portfolio/static/media/project3.8a18532f1562deb48f68.webp",
+    "static/media/Designer.webp": "/personal-portfolio/static/media/Designer.46c7ece5502d7fc94e00.webp",
+    "static/media/project6.webp": "/personal-portfolio/static/media/project6.beaa193bc7e99750e02d.webp",
+    "static/media/project5.webp": "/personal-portfolio/static/media/project5.bb43fb88bb8a74461926.webp",
+    "static/media/oz891c1p.webp": "/personal-portfolio/static/media/oz891c1p.1fe64be254946b2d7f9e.webp",
+    "static/media/project2.webp": "/personal-portfolio/static/media/project2.3ab6a385b4533b42c48f.webp",
+    "static/media/project4.webp": "/personal-portfolio/static/media/project4.6385058b34652cbea014.webp",
+    "static/media/project7.webp": "/personal-portfolio/static/media/project7.6e41c8076133f67e18f7.webp",
+    "static/media/Dart-Aim-Transparent.webp": "/personal-portfolio/static/media/Dart-Aim-Transparent.f9c6a9c85ebc282a2c08.webp",
+    "static/media/ayyan.webp": "/personal-portfolio/static/media/ayyan.619e619bc61ee4cc248f.webp",
+    "static/media/project1.webp": "/personal-portfolio/static/media/project1.e9385ffdc40f8d966812.webp",
     "index.html": "/personal-portfolio/index.html",
-    "main.56e34caa.css.map": "/personal-portfolio/static/css/main.56e34caa.css.map",
-    "main.542bb271.js.map": "/personal-portfolio/static/js/main.542bb271.js.map",
+    "main.391747eb.css.map": "/personal-portfolio/static/css/main.391747eb.css.map",
+    "main.2657e5e8.js.map": "/personal-portfolio/static/js/main.2657e5e8.js.map",
     "787.7da95b79.chunk.js.map": "/personal-portfolio/static/js/787.7da95b79.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.56e34caa.css",
-    "static/js/main.542bb271.js"
+    "static/css/main.391747eb.css",
+    "static/js/main.2657e5e8.js"
   ]
 }
