@@ -6,7 +6,7 @@
 
 :root{
   --text-color: black;
-  --bg: url('/src/images/watercolor-background-design_23-2148481362.avif');
+  --bg: url('/src/images/Designer.webp');
   --border-color: rgb(218, 7, 218);
   --hover-color: rgb(181, 33, 181);
   --text-hover-color: white;
@@ -19,15 +19,15 @@
 
 [data-theme='dark']{
   --text-color: white;
-  --bg: url('/src/images/OIP.jpeg');
+  --bg: url('/src/images/dark.webp');
   --border-color: white;
   --hover-color: white;
   --text-hover-color: black;
-  --overlay-color: rgb(216, 45, 65);
+  --overlay-color: rgb(136, 7, 22);
   --form-bg: white;
   --offcanvas-color: rgba(0, 0, 0, 0.8);
-  --box-shadow-color: 2px 2px 9px 2px rgb(252, 90, 90), -2px -2px 9px 2px rgb(252, 90, 90);
-  --box-shadow-color2: 2px 2px 5px 5px rgb(221, 73, 73);
+  --box-shadow-color: 2px 2px 9px 2px rgb(150, 38, 38), -2px -2px 9px 2px rgb(150, 38, 38);
+  --box-shadow-color2: 2px 2px 5px 5px rgb(150, 38, 38);
 }
 
 .whole_container{

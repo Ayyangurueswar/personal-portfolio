@@ -1,7 +1,7 @@
 import React, {useState} from 'react';
 import { faEnvelope, faPhone } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faLinkedin, faGithub, faInstagram } from '@fortawesome/free-brands-svg-icons';
+import { faLinkedin, faGithub } from '@fortawesome/free-brands-svg-icons';
 import Fade from 'react-reveal/Fade';
 import { TextField } from '@mui/material';
 import LoadingButton from '@mui/lab/LoadingButton';
@@ -57,6 +57,7 @@ const Contact = () => {
   }
   return (
     <div className='contact_container mt-5' id='contact'>
+      <Fade bottom>
       <h3 className='text-center text-decoration-underline'>Connect with me</h3>
       <div className='contacts'>
         <a href='https://www.linkedin.com/in/ayyan-guru-eswar-a64827240/' className='contact_icon_wrap'>
@@ -72,6 +73,7 @@ const Contact = () => {
           <FontAwesomeIcon icon={faPhone} beat size='2xl' className='contact_icon'/>
         </a>
       </div>
+      </Fade>
       <div className='queries mb-5'>
         <p className='fs-5'>
           I am currently open to work in SDE or front-end developer roles so do
@@ -87,6 +89,7 @@ const Contact = () => {
           <div className='divider_div'></div>
         </Fade>
       </div>
+      <Fade bottom>
       <h3 className='text-center mb-5 text-decoration-underline'>Send a message</h3>
       <form className='contact_form'>
         <TextField id='filled-basic' label='Name' variant='filled' placeholder='Your name' 
@@ -124,6 +127,7 @@ const Contact = () => {
         </IconButton>}
       />
       </form>
+      </Fade>
     </div>
   )
 }

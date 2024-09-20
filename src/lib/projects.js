@@ -1,10 +1,10 @@
-import project1 from '../images/project1.png'
-import project2 from '../images/project2.png'
-import project3 from '../images/project3.png'
-import project4 from '../images/project4.png'
-import project5 from '../images/project5.png'
-import project6 from '../images/project6.png'
-import project7 from '../images/project7.png'
+import project1 from '../images/project1.webp'
+import project2 from '../images/project2.webp'
+import project3 from '../images/project3.webp'
+import project4 from '../images/project4.webp'
+import project5 from '../images/project5.webp'
+import project6 from '../images/project6.webp'
+import project7 from '../images/project7.webp'
 
 const projects = [
     {

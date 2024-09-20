@@ -11,9 +11,11 @@ import Footer from './components/Footer';
 import Header from './components/Header';
 
 function App() {
-  const [theme, setTheme] = useState(true);
+  const storedTheme = JSON.parse(localStorage.getItem('theme'));
+  const [theme, setTheme] = useState(storedTheme);
   const toggleMode = () => {
-    setTheme((theme) => !theme);
+    localStorage.setItem('theme', JSON.stringify(!theme));
+    setTheme(!theme);
   }
   return (
       <div className='whole_container' data-theme={theme ? 'light' : 'dark'}>

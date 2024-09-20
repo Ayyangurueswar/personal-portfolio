@@ -4,9 +4,9 @@ import { Typography } from '@mui/material';
 import SchoolIcon from '@mui/icons-material/School';
 import { TimelineOppositeContent, Timeline, TimelineConnector, TimelineDot, TimelineContent, TimelineItem, TimelineSeparator } from '@mui/lab';
 import BusinessOutlinedIcon from '@mui/icons-material/BusinessOutlined';
-import pic from '../images/ayyan.jpg';
-import sidepic1 from '../images/Dart-Aim-Transparent.png';
-import sidepic2 from '../images/oz891c1p.png';
+import pic from '../images/ayyan.webp';
+import sidepic1 from '../images/Dart-Aim-Transparent.webp';
+import sidepic2 from '../images/oz891c1p.webp';
 
 const About = () => {
   return (

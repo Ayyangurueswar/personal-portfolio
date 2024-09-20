@@ -3,6 +3,7 @@ import { faC } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { PieChart } from '@mui/x-charts/PieChart';
 import React from 'react';
+import Fade from 'react-reveal/Fade'
 
 const CustomToolTip = ({itemData, series}) => {
   return (
@@ -61,6 +62,7 @@ const Skills = () => {
   }]
   return (
     <div className='skills_container mt-5 px-5' id='skills'>
+      <Fade bottom>
       <div>
         <h3 className='text-decoration-underline'>Skills:</h3>
         <span>(hover to see more)</span>
@@ -91,6 +93,14 @@ const Skills = () => {
               <h5>Frontend development internship</h5>
               <div className='overlay'>
                 <p>Certificate of completion of internship at Runon private limited</p>
+              </div>
+            </div>
+          </a>
+          <a href='https://drive.google.com/file/d/1X2YQ3goiA0O0OXghHO4Ft0LLHwbyz0jg/view?usp=sharing' className='cert'>
+            <div className='cert_wrapper'>
+              <h5>React.js Development Internship</h5>
+              <div className='overlay'>
+                <p>Certificate of completion of training and internship at Freshtronics Private Limited.</p>
               </div>
             </div>
           </a>
@@ -126,16 +136,9 @@ const Skills = () => {
               </div>
             </div>
           </a>
-          <a href='https://drive.google.com/file/d/1LJK_-G4G3Pg8lLDuTBJg-TsgxB7D_Tv7/view?usp=sharing' className='cert'>
-            <div className='cert_wrapper'>
-              <h5>Internet of Things</h5>
-              <div className='overlay'>
-                <p>Certificate of completion of training and internship at Emertxe Information Technologies</p>
-              </div>
-            </div>
-          </a>
         </div>
       </div>
+      </Fade>
     </div>
   )
 }

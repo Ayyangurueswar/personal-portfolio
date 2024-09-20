@@ -1,10 +1,12 @@
 import React from 'react'
 import projects from '../lib/projects'
 import ProjectCard from './ProjectCard'
+import Fade from 'react-reveal/Fade'
 
 const Projects = () => {
   return (
     <div className='px-5' id='projects'>
+      <Fade bottom>
       <h2 className='my-4 text-decoration-underline'>Projects:</h2>
       <div id="carouselExampleCaptions" className="carousel slide project mx-auto" data-bs-ride="carousel">
         <div className="carousel-indicators">
@@ -28,6 +30,7 @@ const Projects = () => {
           <span className="fs-1" aria-hidden="true">&gt;</span>
         </button>
       </div>
+      </Fade>
     </div>
   )
 }
