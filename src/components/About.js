@@ -20,7 +20,7 @@ const About = () => {
           <p className='fs-3 mb-4 text-center'>Hi there, This is Ayyan Guru Eswar - Frontend developer with experience building web applications 
             using Next.js and React.js.  I'm always excited to learn about the latest technologies and apply them to create awesome web experiences.
           </p>
-          <a href='https://drive.google.com/file/d/138YhbTCPA_22bXhmBCWi9SFp-glAcLDP/view?usp=sharing' className='menu_btn px-4 py-2'>View resume</a>
+          <a href='https://drive.google.com/file/d/1buIer4es7AFPOOxiFRYQAhL2jrhTWD9Y/view?usp=sharing' className='menu_btn px-4 py-2'>View resume</a>
         </div>
         </Fade>
       </div>

@@ -23,7 +23,6 @@ const ProjectCard = ({project}) => {
                 }
             </ul>
             </div>
-            {project.demoLink && <a href={project.demoLink} className='demo mt-1 fs-5 text-light'>Demo</a>}
         </div>
         </div>
     </div>

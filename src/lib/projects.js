@@ -1,14 +1,22 @@
 import project1 from '../images/project1.webp'
 import project2 from '../images/project2.webp'
-import project3 from '../images/project3.webp'
 import project4 from '../images/project4.webp'
 import project5 from '../images/project5.webp'
 import project6 from '../images/project6.webp'
 import project7 from '../images/project7.webp'
+import project8 from '../images/project8.webp'
 
 const projects = [
     {
         id: 1,
+        title: 'Notes',
+        description: 'A note saver application created using MERN stack technologies',
+        image: project8,
+        projectURL: 'https://github.com/Ayyangurueswar/notes-app',
+        features: ['User authentication done using jwt', 'User can create, edit and delete notes', 'APIs are built using Express.js']
+    },
+    {
+        id: 2,
         title: 'GetHired',
         description: 'A job application portal built using Next.js and Strapi CMS.',
         image: project7,
@@ -16,21 +24,12 @@ const projects = [
         features: ['Supports both job seeker and job poster roles', 'Authentication based on HTTP only cookies and jwt.', 'PostgreSQL is used as the database and cloudinary is used for storing images and files']
     },
     {
-        id: 2,
+        id: 3,
         title: 'Event management site',
         description: 'A full stack event management site created using Next.js and Strapi CMS.',
         image: project5,
         projectURL: 'https://eventssite.vercel.app',
         features: ['Allows all users to view events and authenticated users to view, upload and edit events.', 'Authentication based on HTTP only cookies and jwt.', 'PostgreSQL is used as the database and cloudinary is used for storing images.', 'Fully styled using Tailwind CSS']
-    },
-    {
-        id: 3,
-        title: 'Food delivery app',
-        description: 'Food delivery app created using MERN stack technologies.',
-        image: project3,
-        features: ['Allows the user to place and view orders', 'Added user authentication', 'Integrated third party APIs like mailtrap(for user authentication) and stripe(for payments)'],
-        projectURL: 'https://github.com/Ayyangurueswar/food-delivery-app',
-        demoLink: 'https://www.youtube.com/watch?v=okGTQ4LMmMM'
     },
     {
         id: 4,

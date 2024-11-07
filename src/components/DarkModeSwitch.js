@@ -1,6 +1,5 @@
 import React from 'react'
 import { styled } from '@mui/material/styles';
-import FormControlLabel from '@mui/material/FormControlLabel';
 import { Switch } from '@mui/material';
 
 const DarkModeSwitch = ({toggleMode, theme}) => {
@@ -51,10 +50,7 @@ const DarkModeSwitch = ({toggleMode, theme}) => {
         },
       }));
   return (
-    <FormControlLabel
-        control={<MaterialUISwitch sx={{ m: 1 }} checked={!theme} inputProps={{ 'aria-label': 'controlled' }}/>}
-        onChange={toggleMode}
-    />
+    <MaterialUISwitch sx={{ m: 1 }} checked={!theme} onChange={toggleMode} inputProps={{ 'aria-label': 'controlled' }}/>
   )
 }
 
