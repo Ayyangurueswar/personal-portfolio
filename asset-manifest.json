@@ -1,10 +1,10 @@
 {
   "files": {
     "main.css": "/personal-portfolio/static/css/main.fbcfd84f.css",
-    "main.js": "/personal-portfolio/static/js/main.910e856b.js",
+    "main.js": "/personal-portfolio/static/js/main.a70a0654.js",
     "static/js/787.7da95b79.chunk.js": "/personal-portfolio/static/js/787.7da95b79.chunk.js",
     "static/media/dark.webp": "/personal-portfolio/static/media/dark.ad26b7767ec65b87cd5a.webp",
-    "static/media/project3.webp": "/personal-portfolio/static/media/project3.8a18532f1562deb48f68.webp",
+    "static/media/project8.webp": "/personal-portfolio/static/media/project8.33be3edb79f6092a4aa4.webp",
     "static/media/Designer.webp": "/personal-portfolio/static/media/Designer.46c7ece5502d7fc94e00.webp",
     "static/media/project6.webp": "/personal-portfolio/static/media/project6.beaa193bc7e99750e02d.webp",
     "static/media/project5.webp": "/personal-portfolio/static/media/project5.bb43fb88bb8a74461926.webp",
@@ -13,15 +13,15 @@
     "static/media/project4.webp": "/personal-portfolio/static/media/project4.6385058b34652cbea014.webp",
     "static/media/project7.webp": "/personal-portfolio/static/media/project7.6e41c8076133f67e18f7.webp",
     "static/media/Dart-Aim-Transparent.webp": "/personal-portfolio/static/media/Dart-Aim-Transparent.f9c6a9c85ebc282a2c08.webp",
-    "static/media/ayyan.webp": "/personal-portfolio/static/media/ayyan.619e619bc61ee4cc248f.webp",
+    "static/media/ayyan.webp": "/personal-portfolio/static/media/ayyan.44a7be549e87f5c0fa14.webp",
     "static/media/project1.webp": "/personal-portfolio/static/media/project1.e9385ffdc40f8d966812.webp",
     "index.html": "/personal-portfolio/index.html",
     "main.fbcfd84f.css.map": "/personal-portfolio/static/css/main.fbcfd84f.css.map",
-    "main.910e856b.js.map": "/personal-portfolio/static/js/main.910e856b.js.map",
+    "main.a70a0654.js.map": "/personal-portfolio/static/js/main.a70a0654.js.map",
     "787.7da95b79.chunk.js.map": "/personal-portfolio/static/js/787.7da95b79.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.fbcfd84f.css",
-    "static/js/main.910e856b.js"
+    "static/js/main.a70a0654.js"
   ]
 }
