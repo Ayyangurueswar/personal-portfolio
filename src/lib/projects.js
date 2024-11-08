@@ -12,7 +12,7 @@ const projects = [
         title: 'Notes',
         description: 'A note saver application created using MERN stack technologies',
         image: project8,
-        projectURL: 'https://github.com/Ayyangurueswar/notes-app',
+        projectURL: 'https://notes-app-xi-lemon.vercel.app',
         features: ['User authentication done using jwt', 'User can create, edit and delete notes', 'APIs are built using Express.js']
     },
     {
