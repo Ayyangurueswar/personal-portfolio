@@ -108,30 +108,6 @@ const About = () => {
                 align="right"
                 variant="body2"
               >
-                05/2024 - 06/2024
-            </TimelineOppositeContent>
-            <TimelineSeparator>
-              <TimelineConnector />
-              <TimelineDot color='primary'>
-                <BusinessOutlinedIcon />
-              </TimelineDot>
-              <TimelineConnector />
-            </TimelineSeparator>
-            <TimelineContent sx={{ py: '12px', px: 2 }}>
-              <Typography variant="h6" component="span">
-                React.js developer at Freshtronics Technologies
-              </Typography>
-              <Typography>
-                Developed reusable React and React Native components for a healthcare application.
-              </Typography>
-            </TimelineContent>
-          </TimelineItem>
-          <TimelineItem>
-          <TimelineOppositeContent
-                sx={{ m: 'auto 0' }}
-                align="right"
-                variant="body2"
-              >
                 06/2024 - 08/2024
             </TimelineOppositeContent>
             <TimelineSeparator>

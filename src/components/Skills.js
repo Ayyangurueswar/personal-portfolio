@@ -107,14 +107,6 @@ const Skills = () => {
               </div>
             </div>
           </a>
-          <a href='https://drive.google.com/file/d/1X2YQ3goiA0O0OXghHO4Ft0LLHwbyz0jg/view?usp=sharing' className='cert'>
-            <div className='cert_wrapper'>
-              <h5>React.js Development Internship</h5>
-              <div className='overlay'>
-                <p>Certificate of completion of training and internship at Freshtronics Private Limited.</p>
-              </div>
-            </div>
-          </a>
           <a href='https://www.freecodecamp.org/certification/fcc8aed5ebd-e202-4429-8296-535d9b09857d/javascript-algorithms-and-data-structures' className='cert'>
             <div className='cert_wrapper'>
               <h5>JavaScript data structures and algorithms</h5>
@@ -127,7 +119,15 @@ const Skills = () => {
             <div className='cert_wrapper'>
               <h5>Programming using React.js</h5>
               <div className='overlay'>
-                <p>Certificate of completion of course - React.js, in Infosys Springboard</p>
+                <p>Certificate of completion of course - React.js, from Infosys Springboard</p>
+              </div>
+            </div>
+          </a>
+          <a href='https://drive.google.com/file/d/1GXm2lQ1FLI5M53X3XXNr3GnhIVQuPx6q/view?usp=sharing' className='cert'>
+            <div className='cert_wrapper'>
+              <h5>Programming using HTML5</h5>
+              <div className='overlay'>
+                <p>Certificate of completion of course - Programming using HTML5 from Infosys Springboard.</p>
               </div>
             </div>
           </a>
