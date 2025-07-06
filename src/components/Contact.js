@@ -74,12 +74,6 @@ const Contact = () => {
         </a>
       </div>
       </Fade>
-      <div className='queries mb-5'>
-        <p className='fs-5'>
-          I am currently open to work in SDE or front-end developer roles so do
-          get in touch if you think I can fit in.
-        </p>
-      </div>
       <div className='divider mb-5'>
         <Fade left>
           <div className='divider_div'></div>

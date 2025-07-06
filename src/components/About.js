@@ -17,7 +17,7 @@ const About = () => {
         </Fade>
         <Fade bottom>
         <div className='mb-5 about_aside'>
-          <p className='fs-3 mb-4 text-center'>Hi there, This is Ayyan Guru Eswar - Frontend developer with experience building web applications 
+          <p className='fs-3 mb-4 text-center'>Hi there, This is Ayyan Guru Eswar - Software developer with experience building web applications 
             using Next.js and React.js.  I'm always excited to learn about the latest technologies and apply them to create awesome web experiences.
           </p>
           <a href='https://drive.google.com/file/d/1buIer4es7AFPOOxiFRYQAhL2jrhTWD9Y/view?usp=sharing' className='menu_btn px-4 py-2'>View resume</a>
@@ -60,7 +60,7 @@ const About = () => {
                 align="right"
                 variant="body2"
               >
-                2021
+                2021 - 2025
             </TimelineOppositeContent>
             <TimelineSeparator>
               <TimelineConnector />
@@ -123,6 +123,56 @@ const About = () => {
               </Typography>
               <Typography>
                 Worked on the re-development of the company's official website using Next.js and Strapi CMS.
+              </Typography>
+            </TimelineContent>
+          </TimelineItem>
+          <TimelineItem>
+          <TimelineOppositeContent
+                sx={{ m: 'auto 0' }}
+                align="right"
+                variant="body2"
+              >
+                01/2025 - 06/2025
+            </TimelineOppositeContent>
+            <TimelineSeparator>
+              <TimelineConnector />
+              <TimelineDot color='primary'>
+                <BusinessOutlinedIcon />
+              </TimelineDot>
+              <TimelineConnector />
+            </TimelineSeparator>
+            <TimelineContent sx={{ py: '12px', px: 2 }}>
+              <Typography variant="h6" component="span">
+                Software Development Engineer Intern at Amazon
+              </Typography>
+              <Typography>
+                Created a java library to implement annotation-based caching mechanism and worked on the development
+                of T2C (Text to Contact) troubleshooting page in Alexa mobile app.
+              </Typography>
+            </TimelineContent>
+          </TimelineItem>
+          <TimelineItem>
+          <TimelineOppositeContent
+                sx={{ m: 'auto 0' }}
+                align="right"
+                variant="body2"
+              >
+                07/2025 - Present
+            </TimelineOppositeContent>
+            <TimelineSeparator>
+              <TimelineConnector />
+              <TimelineDot color='primary'>
+                <BusinessOutlinedIcon />
+              </TimelineDot>
+              <TimelineConnector />
+            </TimelineSeparator>
+            <TimelineContent sx={{ py: '12px', px: 2 }}>
+              <Typography variant="h6" component="span">
+                Software Development Engineer at Amazon
+              </Typography>
+              <Typography>
+                Working on T2C (Text to Contact), Carrier and COBO (Call on behalf of) calling features of Alexa+ with
+                Alexa Communications - A2P (Alexa to Phone) team.
               </Typography>
             </TimelineContent>
           </TimelineItem>

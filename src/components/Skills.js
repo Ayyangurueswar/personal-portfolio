@@ -91,6 +91,14 @@ const Skills = () => {
       <div>
         <h3 className='mb-4 mt-5 text-decoration-underline'>Certifications:</h3>
         <div className='certifications'>
+          <a href='https://drive.google.com/file/d/1twJvnFpR3o4hEyz9upZbwr3S-il4pjD1/view?usp=sharing' className='cert'>
+            <div className='cert_wrapper'>
+              <h5>Software development internship</h5>
+              <div className='overlay'>
+                <p>Certificate of completion of internship at Amazon</p>
+              </div>
+            </div>
+          </a>
           <a href='https://drive.google.com/file/d/1d3lVHeHC9fmldRbPiSc4_813D6A9v7xS/view?usp=sharing' className='cert'>
             <div className='cert_wrapper'>
               <h5>Full stack development internship</h5>
@@ -128,14 +136,6 @@ const Skills = () => {
               <h5>Programming using HTML5</h5>
               <div className='overlay'>
                 <p>Certificate of completion of course - Programming using HTML5 from Infosys Springboard.</p>
-              </div>
-            </div>
-          </a>
-          <a href='https://www.hackerrank.com/certificates/70c8844302af' className='cert'>
-            <div className='cert_wrapper'>
-              <h5>Python Basics</h5>
-              <div className='overlay'>
-                <p>Python - 5 star rated at HackerRank</p>
               </div>
             </div>
           </a>
